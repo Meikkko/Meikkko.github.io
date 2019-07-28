@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>LeetCode 第 1 号问题：两数之和 · Meiko&#39;s Studio</title>
+    <title>LeetCode第3号问题：无重复字符的最长子串 · Meiko&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -232,7 +232,7 @@
                 <a href="/" >Meiko&#39;s Studio.</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">LeetCode 第 1 号问题：两数之和</a>
+                <a href="#" class="post-name">LeetCode第3号问题：无重复字符的最长子串</a>
             </div>
     </div>
     
@@ -262,7 +262,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            LeetCode 第 1 号问题：两数之和
+            LeetCode第3号问题：无重复字符的最长子串
             <!-- 404 -->
             
         </h1>
@@ -279,14 +279,20 @@ height:50vh;
             <div class="post-intros">
                 <!-- 文章页标签  -->
                 
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "java">java</a>
+    
+</div>
+                
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">374</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">473</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/07/27</span>
+                    <span class="post-intro-time">2019/07/28</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -410,31 +416,29 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <p>题目来源于 LeetCode 上第 1 号问题：两数之和。题目难度为 Easy，目前通过率为 45.8% 。</p>
-<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定一个整数数组 <code>nums</code> 和一个目标值 <code>target</code>，请你在该数组中找出和为目标值的那 <strong>两个</strong> 整数，并返回他们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
-<p><strong>示例:</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">给定 nums = [2, 7, 11, 15], target = 9</span><br><span class="line"></span><br><span class="line">因为 nums[0] + nums[1] = 2 + 7 = 9</span><br><span class="line">所以返回 [0, 1]</span><br></pre></td></tr></table></figure>
+        <p>题目来源于 LeetCode 上第 3 号问题：无重复字符的最长子串。题目难度为 Medium，目前通过率为 29.0% 。</p>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定一个字符串，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度。</p>
+<p><strong>示例 1:</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: <span class="string">"abcabcbb"</span></span><br><span class="line">输出: <span class="number">3</span> </span><br><span class="line">解释: 因为无重复字符的最长子串是 <span class="string">"abc"</span>，所以其长度为 <span class="number">3</span>。</span><br></pre></td></tr></table></figure>
 
-<h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a>题目解析</h3><p>使用查找表来解决该问题。</p>
-<p>设置一个 map 容器 record 用来记录元素的值与索引，然后遍历数组 nums。</p>
+<h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a>题目解析</h3><p>建立一个256位大小的整型数组 freg ，用来建立字符和其出现位置之间的映射。</p>
+<p>维护一个滑动窗口，窗口内的都是没有重复的字符，去尽可能的扩大窗口的大小，窗口不停的向右滑动。</p>
 <ul>
-<li>每次遍历时使用临时变量 complement 用来保存目标值与当前值的差值</li>
-<li>在此次遍历中查找 record ，查看是否有与 complement 一致的值，如果查找成功则返回查找值的索引值与当前变量的值 i</li>
-<li>如果未找到，则在 record 保存该元素与索引值 i</li>
+<li>（1）如果当前遍历到的字符从未出现过，那么直接扩大右边界；</li>
+<li>（2）如果当前遍历到的字符出现过，则缩小窗口（左边索引向右移动），然后继续观察当前遍历到的字符；</li>
+<li>（3）重复（1）（2），直到左边索引无法再移动；</li>
+<li>（4）维护一个结果res，每次用出现过的窗口大小来更新结果 res，最后返回 res 获取结果。</li>
 </ul>
-<h3 id="动画描述"><a href="#动画描述" class="headerlink" title="动画描述"></a>动画描述</h3><p><img src="https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/20181028221055.gif" alt></p>
-<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">// 1. Two Sum</span><br><span class="line">// https://leetcode.com/problems/two-sum/description/</span><br><span class="line">// 时间复杂度：O(n)</span><br><span class="line">// 空间复杂度：O(n)</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; twoSum(vector&lt;int&gt;&amp; nums, int target) &#123;</span><br><span class="line">        unordered_map&lt;int,int&gt; record;</span><br><span class="line">        for(int i = 0 ; i &lt; nums.size() ; i ++)&#123;</span><br><span class="line">       </span><br><span class="line">            int complement = target - nums[i];</span><br><span class="line">            if(record.find(complement) != record.end())&#123;</span><br><span class="line">                int res[] = &#123;i, record[complement]&#125;;</span><br><span class="line">                return vector&lt;int&gt;(res, res + 2);</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            record[nums[i]] = i;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-
-
+<h3 id="动画描述"><a href="#动画描述" class="headerlink" title="动画描述"></a>动画描述</h3><p><img src="/.com//o2acw.gif" alt="动画描述"><br><img src="https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/blog/o2acw.gif" alt="动画描述"></p>
+<h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 滑动窗口</span></span><br><span class="line"><span class="comment">// 时间复杂度: O(len(s))</span></span><br><span class="line"><span class="comment">// 空间复杂度: O(len(charset))</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> freq[<span class="number">256</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">        <span class="keyword">int</span> l = <span class="number">0</span>, r = <span class="number">-1</span>; <span class="comment">//滑动窗口为s[l...r]</span></span><br><span class="line">        <span class="keyword">int</span> res = <span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 整个循环从 l == 0; r == -1 这个空窗口开始</span></span><br><span class="line">        <span class="comment">// 到l == s.size(); r == s.size()-1 这个空窗口截止</span></span><br><span class="line">        <span class="comment">// 在每次循环里逐渐改变窗口, 维护freq, 并记录当前窗口中是否找到了一个新的最优值</span></span><br><span class="line">        <span class="keyword">while</span>(l &lt; s.size())&#123;</span><br><span class="line">            <span class="keyword">if</span>(r + <span class="number">1</span> &lt; s.size() &amp;&amp; freq[s[r+<span class="number">1</span>]] == <span class="number">0</span>)&#123;</span><br><span class="line">                r++;</span><br><span class="line">                freq[s[r]]++;</span><br><span class="line">            &#125;<span class="keyword">else</span> &#123;   <span class="comment">//r已经到头 || freq[s[r+1]] == 1</span></span><br><span class="line">                freq[s[l]]--;</span><br><span class="line">                l++;</span><br><span class="line">            &#125;</span><br><span class="line">            res = max(res, r-l+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
         <div class="license-wrapper">
             <p>原文作者：<a href="http://yoursite.com">Meiko</a>
-            <p>原文链接：<a href="http://yoursite.com/2019/07/27/LeetCode第1号问题：两数之和/">http://yoursite.com/2019/07/27/LeetCode第1号问题：两数之和/</a>
-            <p>发表日期：<a href="http://yoursite.com/2019/07/27/LeetCode第1号问题：两数之和/">July 27th 2019, 2:27:22 pm</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/07/27/LeetCode第1号问题：两数之和/">July 27th 2019, 2:34:29 pm</a>
+            <p>原文链接：<a href="http://yoursite.com/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/">http://yoursite.com/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/</a>
+            <p>发表日期：<a href="http://yoursite.com/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/">七月 28日 2019, 3:57:48 下午</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/">July 28th 2019, 4:01:56 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -442,17 +446,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/" title= "LeetCode第3号问题：无重复字符的最长子串">
-                    <div class="nextTitle">LeetCode第3号问题：无重复字符的最长子串</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/07/23/LeetCode第2号问题：两数相加/" title= "LeetCode 第 2 号问题：两数相加">
-                    <div class="prevTitle">LeetCode 第 2 号问题：两数相加</div>
+                <a href= "/2019/07/27/LeetCode第1号问题：两数之和/" title= "LeetCode 第 1 号问题：两数之和">
+                    <div class="prevTitle">LeetCode 第 1 号问题：两数之和</div>
                 </a>
             
         </li>
