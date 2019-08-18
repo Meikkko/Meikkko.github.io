@@ -43,27 +43,6 @@
   </entry>
   
   <entry>
-    <title>测试图片</title>
-    <link href="http://yoursite.com/2019/07/28/%E6%B5%8B%E8%AF%95%E5%9B%BE%E7%89%87/"/>
-    <id>http://yoursite.com/2019/07/28/测试图片/</id>
-    <published>2019-07-28T08:42:01.000Z</published>
-    <updated>2019-07-28T08:42:41.795Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://upload-images.jianshu.io/upload_images/18958678-866bf1d1b152cea5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="动画描述"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/18958678-866bf1d1b152cea5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>LeetCode第3号问题：无重复字符的最长子串</title>
     <link href="http://yoursite.com/2019/07/28/LeetCode%E7%AC%AC3%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/"/>
     <id>http://yoursite.com/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/</id>
