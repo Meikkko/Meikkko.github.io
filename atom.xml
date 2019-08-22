@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-22T06:34:35.468Z</updated>
+  <updated>2019-08-22T08:49:09.213Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,22 +17,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>codingNow 2</title>
-    <link href="http://yoursite.com/2019/08/22/codingNow-2/"/>
-    <id>http://yoursite.com/2019/08/22/codingNow-2/</id>
-    <published>2019-08-22T06:19:00.000Z</published>
-    <updated>2019-08-22T06:34:35.468Z</updated>
+    <title>codingNow 3</title>
+    <link href="http://yoursite.com/2019/08/22/codingNow-3/"/>
+    <id>http://yoursite.com/2019/08/22/codingNow-3/</id>
+    <published>2019-08-22T08:05:18.000Z</published>
+    <updated>2019-08-22T08:49:09.213Z</updated>
     
-    <content type="html"><![CDATA[<p>请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”</p><pre><code>public class Test04 {    public static String replaceSpace(StringBuffer str) {        int usedlength = str.length();        if (str == null) {            return &quot;&quot;;        }        int whitespace = 0;        for (int i = 0; i &lt; usedlength; i++) {            if (str.charAt(i) == &apos; &apos;) {                whitespace++;            }        }        int targetlength = whitespace * 2 + usedlength;        str.setLength(targetlength);        targetlength--;        usedlength--;        for (int i = usedlength ; i &gt;= 0; i--) {            if (str.charAt(i) != &apos; &apos;) {                str.setCharAt(targetlength , str.charAt(i));                targetlength--;            }else {                str.setCharAt(targetlength , &apos;0&apos;);                str.setCharAt(--targetlength, &apos;2&apos;);                str.setCharAt(--targetlength, &apos;%&apos;);                targetlength--;            }        }        return str.toString();    }}</code></pre><p>个人总结，两个注意点<br>1.–targetlength和targetlength– 的区别，此处应该是需要先减后setCharAt。<br>2.预先对targetlength和usedlength处理，可以避免后续的繁杂思考。</p>]]></content>
+    <content type="html"><![CDATA[<p>题目描述<br>输入一个链表，按链表从尾到头的顺序返回一个ArrayList。</p><p>方法一：利用堆栈，单个读取存入栈中，再逐个pop,实线从后往前。</p><pre><code>public ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) {    Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();    while (listNode != null) {        stack.push(listNode.val);        listNode = listNode.next;    }    ArrayList&lt;Integer&gt; list = new ArrayList&lt;&gt;();    while (!stack.isEmpty()) {        Integer pop = stack.pop();        list.add(pop);    }//        或者利用arr的特性，在零位添加元素类似于对于堆栈进行push//        while (listNode != null) {//            list.add(0, listNode.val);//            listNode = listNode.next;//        }    return list;}</code></pre><p>方法二：递归，并利用list.add的类似堆栈特性。<br>    public class Solution {<br>        ArrayList<integer> list = new ArrayList&lt;&gt;();<br>        public ArrayList<integer> printListFromTailToHead(ListNode listNode) {<br>            while (listNode!=null){<br>                list.add(0, listNode.val);<br>                listNode = listNode.next;<br>                printListFromTailToHead(listNode);<br>                return list;<br>            }<br>            return list;<br>        }<br>    }<br>方法三：在递归的基础上利用了递归的特性，到尾反向执行。<br>    public class Solution {<br>        ArrayList<integer> list = new ArrayList<integer>();<br>        public ArrayList<integer> printListFromTailToHead(ListNode listNode) {<br>            if (listNode!=null){<br>                this.printListFromTailToHead(listNode.next);<br>                list.add(listNode.val);<br>            }<br>            return list;<br>        }<br>    }</integer></integer></integer></integer></integer></p><p>个人总结，几个注意点<br>1.如果需要倒置或者反向一类的操作，利用stack可以完成，但是内存消耗较大，效率低。<br>2.list的add（0，xxx）可以做到stack的push操作。<br>3.递归的性质，重复执行，到尾反向传播。第三种方法中利用了递归积攒了大量的add操作未完成，直到最后listNode为空时，返回了空的list，开始完成之前积攒的嵌套add操作，同时也完成了反向的操作。（我怀疑出题者是写出了这个递归之后，才想出来的题目，哈哈，出题者有一点点炫技的嫌疑0.0）</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”&lt;/p&gt;
+        &lt;p&gt;题目描述&lt;br&gt;输入一个链表，按链表从尾到头的顺序返回一个ArrayList。&lt;/p&gt;
+&lt;p&gt;方法一：利用堆栈，单个读取存入栈中，再逐个pop,实线从后往前。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public ArrayList&amp;lt;Integer&amp;gt; printListF
+      
+    
+    </summary>
+    
+    
+      <category term="coding-interviews" scheme="http://yoursite.com/tags/coding-interviews/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>codingNow 2</title>
+    <link href="http://yoursite.com/2019/08/22/codingNow-2/"/>
+    <id>http://yoursite.com/2019/08/22/codingNow-2/</id>
+    <published>2019-08-22T06:19:00.000Z</published>
+    <updated>2019-08-22T08:43:57.793Z</updated>
+    
+    <content type="html"><![CDATA[<p>题目描述<br>请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”</p><pre><code>public class Test04 {    public static String replaceSpace(StringBuffer str) {        int usedlength = str.length();        if (str == null) {            return &quot;&quot;;        }        int whitespace = 0;        for (int i = 0; i &lt; usedlength; i++) {            if (str.charAt(i) == &apos; &apos;) {                whitespace++;            }        }        int targetlength = whitespace * 2 + usedlength;        str.setLength(targetlength);        targetlength--;        usedlength--;        for (int i = usedlength ; i &gt;= 0; i--) {            if (str.charAt(i) != &apos; &apos;) {                str.setCharAt(targetlength , str.charAt(i));                targetlength--;            }else {                str.setCharAt(targetlength , &apos;0&apos;);                str.setCharAt(--targetlength, &apos;2&apos;);                str.setCharAt(--targetlength, &apos;%&apos;);                targetlength--;            }        }        return str.toString();    }}</code></pre><p>个人总结，几个个注意点<br>1.–targetlength和targetlength– 的区别，此处应该是需要先减后setCharAt。<br>2.预先对targetlength和usedlength处理，可以避免后续的繁杂思考。<br>3.考虑从后往前，这样每个字符可以只移动一次，就可以到达目标位置，而且可以在原有字符串上操作，避免了开辟新的内存空间存储新的字符串。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;题目描述&lt;br&gt;请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class Test04 {
 
-    public static String replace
+    public static String
       
     
     </summary>
