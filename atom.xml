@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-22T06:22:14.659Z</updated>
+  <updated>2019-08-22T06:34:35.468Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,18 @@
     <link href="http://yoursite.com/2019/08/22/codingNow-2/"/>
     <id>http://yoursite.com/2019/08/22/codingNow-2/</id>
     <published>2019-08-22T06:19:00.000Z</published>
-    <updated>2019-08-22T06:22:14.659Z</updated>
+    <updated>2019-08-22T06:34:35.468Z</updated>
     
-    <content type="html"><![CDATA[<p>请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy</p><pre><code>public class Test04 {    public static String replaceSpace(StringBuffer str) {        int usedlength = str.length();        if (str == null) {            return &quot;&quot;;        }        int whitespace = 0;        for (int i = 0; i &lt; usedlength; i++) {            if (str.charAt(i) == &apos; &apos;) {                whitespace++;            }        }        int targetlength = whitespace * 2 + usedlength;        str.setLength(targetlength);        targetlength--;        usedlength--;        for (int i = usedlength ; i &gt;= 0; i--) {            if (str.charAt(i) != &apos; &apos;) {                str.setCharAt(targetlength , str.charAt(i));                targetlength--;            }else {                str.setCharAt(targetlength , &apos;0&apos;);                str.setCharAt(--targetlength, &apos;2&apos;);                str.setCharAt(--targetlength, &apos;%&apos;);                targetlength--;            }        }        return str.toString();    }}</code></pre>]]></content>
+    <content type="html"><![CDATA[<p>请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”</p><pre><code>public class Test04 {    public static String replaceSpace(StringBuffer str) {        int usedlength = str.length();        if (str == null) {            return &quot;&quot;;        }        int whitespace = 0;        for (int i = 0; i &lt; usedlength; i++) {            if (str.charAt(i) == &apos; &apos;) {                whitespace++;            }        }        int targetlength = whitespace * 2 + usedlength;        str.setLength(targetlength);        targetlength--;        usedlength--;        for (int i = usedlength ; i &gt;= 0; i--) {            if (str.charAt(i) != &apos; &apos;) {                str.setCharAt(targetlength , str.charAt(i));                targetlength--;            }else {                str.setCharAt(targetlength , &apos;0&apos;);                str.setCharAt(--targetlength, &apos;2&apos;);                str.setCharAt(--targetlength, &apos;%&apos;);                targetlength--;            }        }        return str.toString();    }}</code></pre><p>个人总结，两个注意点<br>1.–targetlength和targetlength– 的区别，此处应该是需要先减后setCharAt。<br>2.预先对targetlength和usedlength处理，可以避免后续的繁杂思考。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy&lt;/p&gt;
+        &lt;p&gt;请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;public class Test04 {
 
-    public static String replaceS
+    public static String replace
       
     
     </summary>
