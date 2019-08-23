@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-23T08:39:00.282Z</updated>
+  <updated>2019-08-23T08:40:22.182Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2019/08/23/codingNow-5-%E7%94%A8%E4%B8%A4%E4%B8%AA%E6%A0%88%E5%AE%9E%E7%8E%B0%E9%98%9F%E5%88%97/"/>
     <id>http://yoursite.com/2019/08/23/codingNow-5-用两个栈实现队列/</id>
     <published>2019-08-23T08:30:09.000Z</published>
-    <updated>2019-08-23T08:39:00.282Z</updated>
+    <updated>2019-08-23T08:40:22.182Z</updated>
     
     <content type="html"><![CDATA[<p>题目描述<br>在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    Stack&lt;Integer&gt; stack1 = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line">    Stack&lt;Integer&gt; stack2 = <span class="keyword">new</span> Stack&lt;Integer&gt;();</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">push</span><span class="params">(<span class="keyword">int</span> node)</span> </span>&#123;</span><br><span class="line">        stack1.push(node);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">pop</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (stack1.isEmpty() &amp;&amp; stack2.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> RuntimeException(<span class="string">"null!"</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (stack2.isEmpty()) &#123;</span><br><span class="line">            <span class="keyword">while</span> (!stack1.isEmpty()) &#123;</span><br><span class="line">                stack2.push(stack1.pop());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> stack2.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>个人总结<br>基本思路：<br>1.push：直接push进stack1。<br>2.pop： 首先检查是否均为空，是则报空指针。剩余两种情况，一是stack2为空，也就是说stack2里面的所有栈都被清除出去或者是尚未放入元素，则将stack1中的元素依次pop后压入stack2，再实现pop功能。二是stack中不为空，直接返回stack2.pop()。<br>3.其中peek和pop区别在于pop会返回栈顶元素并且弹出元素。</p>]]></content>
     
@@ -35,6 +35,8 @@
     
     </summary>
     
+    
+      <category term="coding-interviews" scheme="http://yoursite.com/tags/coding-interviews/"/>
     
   </entry>
   
