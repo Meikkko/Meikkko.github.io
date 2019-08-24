@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-08-24T11:26:17.359Z</updated>
+  <updated>2019-08-24T13:08:27.160Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>codingNow 13 数组按奇偶进行原序归类</title>
+    <link href="http://yoursite.com/2019/08/24/codingNow-13-%E6%95%B0%E7%BB%84%E6%8C%89%E5%A5%87%E5%81%B6%E8%BF%9B%E8%A1%8C%E5%8E%9F%E5%BA%8F%E5%BD%92%E7%B1%BB/"/>
+    <id>http://yoursite.com/2019/08/24/codingNow-13-数组按奇偶进行原序归类/</id>
+    <published>2019-08-24T13:03:10.000Z</published>
+    <updated>2019-08-24T13:08:27.160Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">reOrderArray</span><span class="params">(<span class="keyword">int</span> [] array)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i &lt; array.length; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = array.length-<span class="number">1</span>; j &gt; i; j--)&#123;</span><br><span class="line">                <span class="keyword">if</span> ((array[j] % <span class="number">2</span> == <span class="number">1</span>) &amp;&amp; (array[j - <span class="number">1</span>]%<span class="number">2</span> == <span class="number">0</span>)) <span class="comment">//前偶后奇交换</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = array[j];</span><br><span class="line">                    array[j] = array[j-<span class="number">1</span>];</span><br><span class="line">                    array[j-<span class="number">1</span>] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h1><p>类似于冒泡排序，每次i遍历使得离开头最近的奇数到array[i]位置，当所有奇数均在前面时，剩下的偶数自然就在数组后方，且顺序不变。<br>从后往前，当array[j-1]与array[j]为偶奇时，交换二者的位置。因为所有的交换均是相邻的奇偶位，所以不会对原有的奇偶数顺序造成破坏。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;&lt;p&gt;输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保
+      
+    
+    </summary>
+    
+    
+      <category term="coding-interviews" scheme="http://yoursite.com/tags/coding-interviews/"/>
+    
+  </entry>
   
   <entry>
     <title>codingNow 12 纯数学方法求幂次方</title>
@@ -461,30 +484,6 @@
     
     
       <category term="浅析java" scheme="http://yoursite.com/tags/%E6%B5%85%E6%9E%90java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode 第 3 号问题：无重复字符的最长子串</title>
-    <link href="http://yoursite.com/2019/07/28/LeetCode%E7%AC%AC3%E5%8F%B7%E9%97%AE%E9%A2%98%EF%BC%9A%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2/"/>
-    <id>http://yoursite.com/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/</id>
-    <published>2019-07-28T07:57:48.000Z</published>
-    <updated>2019-08-21T05:57:30.102Z</updated>
-    
-    <content type="html"><![CDATA[<p>题目来源于 LeetCode 上第 3 号问题：无重复字符的最长子串。题目难度为 Medium，目前通过率为 29.0% 。</p><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定一个字符串，请你找出其中不含有重复字符的 <strong>最长子串</strong> 的长度。</p><p><strong>示例 1:</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">输入: <span class="string">"abcabcbb"</span></span><br><span class="line">输出: <span class="number">3</span> </span><br><span class="line">解释: 因为无重复字符的最长子串是 <span class="string">"abc"</span>，所以其长度为 <span class="number">3</span>。</span><br></pre></td></tr></table></figure><h3 id="题目解析"><a href="#题目解析" class="headerlink" title="题目解析"></a>题目解析</h3><p>建立一个256位大小的整型数组 freg ，用来建立字符和其出现位置之间的映射。</p><p>维护一个滑动窗口，窗口内的都是没有重复的字符，去尽可能的扩大窗口的大小，窗口不停的向右滑动。</p><ul><li>（1）如果当前遍历到的字符从未出现过，那么直接扩大右边界；</li><li>（2）如果当前遍历到的字符出现过，则缩小窗口（左边索引向右移动），然后继续观察当前遍历到的字符；</li><li>（3）重复（1）（2），直到左边索引无法再移动；</li><li>（4）维护一个结果res，每次用出现过的窗口大小来更新结果 res，最后返回 res 获取结果。</li></ul><h3 id="动画描述"><a href="#动画描述" class="headerlink" title="动画描述"></a>动画描述</h3><p><img src="https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/blog/o2acw.gif" alt="动画描述"></p><h3 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h3><figure class="highlight java"><figcaption><span>1,暴力法</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 滑动窗口</span></span><br><span class="line"><span class="comment">// 时间复杂度: O(len(s))</span></span><br><span class="line"><span class="comment">// 空间复杂度: O(len(charset))</span></span><br><span class="line">    </span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">lengthOfLongestSubstring</span><span class="params">(String s)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">int</span> longgest =<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; s.length(); i++) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i+<span class="number">1</span> ; j &lt;=s.length() ; j++) &#123;</span><br><span class="line">                    <span class="keyword">if</span>(isUnique(s,i,j))&#123;</span><br><span class="line">                        longgest = Math.max(longgest, j-i);</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> longgest;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isUnique</span><span class="params">(String s, <span class="keyword">int</span> start, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">            HashSet&lt;Character&gt; set = <span class="keyword">new</span> HashSet&lt;Character&gt;();</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = start; i &lt; end ; i++) &#123;</span><br><span class="line">                <span class="keyword">char</span> c = s.charAt(i);</span><br><span class="line">                <span class="keyword">if</span> (set.contains(c)) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                set.add(c);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;题目来源于 LeetCode 上第 3 号问题：无重复字符的最长子串。题目难度为 Medium，目前通过率为 29.0% 。&lt;/p&gt;
-&lt;h3 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述
-      
-    
-    </summary>
-    
-    
-      <category term="leetcode" scheme="http://yoursite.com/tags/leetcode/"/>
     
   </entry>
   
