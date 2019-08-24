@@ -287,7 +287,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">163</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">224</span>阅读时长: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -419,7 +419,7 @@ height:50vh;
         <h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><p>给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。<br>保证base和exponent不同时为0</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">Power</span><span class="params">(<span class="keyword">double</span> base, <span class="keyword">int</span> exponent)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">double</span> result = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">int</span> n = exponent;</span><br><span class="line">        <span class="keyword">double</span> dev = base;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (exponent == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (base == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (exponent &lt; <span class="number">0</span>) &#123;</span><br><span class="line">            n = -exponent;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">while</span> (n != <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">if</span> ((n &amp; <span class="number">1</span>) == <span class="number">1</span>) &#123;</span><br><span class="line">                result *= dev;</span><br><span class="line">            &#125;</span><br><span class="line">            n &gt;&gt;= <span class="number">1</span>;</span><br><span class="line">            dev *= dev;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> exponent &gt; <span class="number">0</span> ? result : (<span class="number">1</span> / result);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h1><p>因为是纯数学方法，所以要用数学的方法解决问题。<br>比如7^13=7^1101=7^1000x7^100x7^1=7^8x7^4x7^1<br>因此利用&amp;操作取末位，若为1则乘，再移位。</p>
+<h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h1><p>因为是纯数学方法，所以要用数学的方法解决问题。<br>比如7^13=7^1101=7^1000x7^100x7^1=7^8x7^4x7^1<br>因此利用&amp;操作取末位，若为1则乘，再移位。<br>本质：将任意一个数化为二进制后均为，1,2,4,8……，即转化为基数的一次，二次，四次，八次方相乘，利用与操作判定需不需要将当前次幂乘到最后的result中。</p>
 
     </article>
     <!-- license  -->
@@ -428,7 +428,7 @@ height:50vh;
             <p>原文作者：<a href="http://yoursite.com">Meiko</a>
             <p>原文链接：<a href="http://yoursite.com/2019/08/24/codingNow-12-纯数学方法求幂次方/">http://yoursite.com/2019/08/24/codingNow-12-纯数学方法求幂次方/</a>
             <p>发表日期：<a href="http://yoursite.com/2019/08/24/codingNow-12-纯数学方法求幂次方/">八月 24日 2019, 7:01:38 晚上</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/08/24/codingNow-12-纯数学方法求幂次方/">August 24th 2019, 7:15:27 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/08/24/codingNow-12-纯数学方法求幂次方/">August 24th 2019, 7:26:17 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
@@ -581,6 +581,18 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     
