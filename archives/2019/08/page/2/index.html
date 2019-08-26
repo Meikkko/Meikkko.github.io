@@ -361,6 +361,158 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/25/codingNow-14-输出链表中倒数第k个元素/" >
+            
+                <span>codingNow 14 输出链表中倒数第k个元素</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一个链表，输出该链表中倒数第k个结点。
+1.双指针（两者相差k-1）123456789101112131415161718192021222324/*public class ListNode &#123;    int val;    ListNode next = null;    ListNode(int val) &#123;        this.val = val;    &#125;&#125;*/public class Solution &#123;    public ListNode FindKthToTail(ListNode head,int k)...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/25</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/24/codingNow-13-数组按奇偶进行原序归类/" >
+            
+                <span>codingNow 13 数组按奇偶进行原序归类</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
+1234567891011121314public class Solution &#123;    public void reOrderArray(int [] array) &#123;        for(int i = 0;i &lt; array.length; i++)&#123;            for(int j = array.length-1; j &gt; i; j--)&#123...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/24/codingNow-12-纯数学方法求幂次方/" >
+            
+                <span>codingNow 12 纯数学方法求幂次方</span>
+        </a>
+        <div class="abstract-content">
+            题目描述给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。保证base和exponent不同时为0
+1234567891011121314151617181920212223242526public class Solution &#123;    public double Power(double base, int exponent) &#123;        double result = 1;        int n = exponent;        double dev = base;        if (...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >
+            
+                <span>codingNow 11 一个数的二进制中1的个数</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
+12345678910public class Solution &#123;    public int NumberOf1(int n) &#123;        int count = 0;        while(n!= 0)&#123;            count++;            n = n &amp; (n - 1);         &#125;        return count;    &#125;&#125;
+
+个人总结如果一个整数不为0，那么他的二进制形式至少有一位是...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/24/codingNow-10-矩形覆盖/" >
+            
+                <span>codingNow 10 矩形覆盖</span>
+        </a>
+        <div class="abstract-content">
+            题目描述我们可以用2x1的小矩形横着或者竖着去覆盖更大的矩形。请问用n个2x1的小矩形无重叠地覆盖一个2xn的大矩形，总共有多少种方法？
+12345678910111213public class Solution &#123;    public int RectCover(int target) &#123;                if (target &lt;= 0) &#123;            return 0;        &#125; else if (target == 1) &#123;            return 1;        &#125...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/08/24/codingNow-9-变态跳箱子/" >
             
                 <span>codingNow 9 变态跳箱子</span>
@@ -505,163 +657,10 @@
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/codingNow-4-还原二叉树/" >
-            
-                <span>codingNow 4 还原二叉树</span>
-        </a>
-        <div class="abstract-content">
-            题目描述输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
-12345678910111213141516171819202122232425262728293031/** * Definition for binary tree * public class TreeNode &#123; *     int val; *     TreeNode left; *     TreeNode right;...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/关于二叉树/" >
-            
-                <span>关于二叉树</span>
-        </a>
-        <div class="abstract-content">
-            #二叉树的前序、中序、后序、层序遍历和还原。  #前序ABC，中序BAC，后序BCA。
-一、描绘二叉树
-123456789101112131415public class Node &#123;    private String name = "";    public Node leftChild;    public Node rightChild;    public Node(String name) &#123;        this.name = name;    &#125;    public Node() &#123;    &#125;    public voi...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "浅析java">浅析java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/22/codingNow-3-从头到尾打印空格/" >
-            
-                <span>codingNow 3 从头到尾打印空格</span>
-        </a>
-        <div class="abstract-content">
-            题目描述输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
-方法一：利用堆栈，单个读取存入栈中，再逐个pop,实线从后往前。
-12345678910111213141516171819public ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) &#123;    Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();    while (listNode != null) &#123;        stack.push(listNode.va...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/22</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/22/codingNow-2-替换空格/" >
-            
-                <span>codingNow 2 替换空格</span>
-        </a>
-        <div class="abstract-content">
-            题目描述请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”
-123456789101112131415161718192021222324252627282930313233343536public class Test04 &#123;    public static String replaceSpace(StringBuffer str) &#123;        int usedlength = str.length();        if (str == null) &#123;      ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/22</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/codingNow-1-二维数组的查找/" >
-            
-                <span>codingNow 1 二维数组的查找</span>
-        </a>
-        <div class="abstract-content">
-            题目描述：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
-规律：首先选取数组中右上角的数字。如果该数字等于要查找的数字，查找过程结束：如果该数字大于要查找的数字，剔除这个数字所在的列：如果该数字小于要查找的数字，剔除这个数字所在的行。也就是说如果要查找的数字不在数组的右上角，则每－次都在数组的查找范围中剔除）行或者一列，这样每一步都可以缩小查找的范围，直到找到要查找的数字，或者查找范围为空。
-123456789101112131415161718192021222324...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2019/08/">&#60; PREV</a><a class="page-number" href="/archives/2019/08/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2019/08/page/3/">3</a><a class="extend next" rel="next" href="/archives/2019/08/page/3/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/2019/08/">&#60; PREV</a><a class="page-number" href="/archives/2019/08/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2019/08/page/3/">3</a><a class="page-number" href="/archives/2019/08/page/4/">4</a><a class="extend next" rel="next" href="/archives/2019/08/page/3/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -1172,9 +1171,102 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 29
+        Total : 34
         </div>
         <!-- search  -->
         
@@ -1191,6 +1283,31 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-24-二叉树中和为某一值的路径/" >codingNow 24 二叉树中和为某一值的路径</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-23-二叉搜索树的后序遍历序列/" >codingNow 23 二叉搜索树的后序遍历序列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-20-实现包含min函数的栈/" >codingNow 20 实现包含min函数的栈</a>
+        </li>
     
     
         <li class="archive-post-item">

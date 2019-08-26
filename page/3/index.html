@@ -374,6 +374,159 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/23/codingNow-4-还原二叉树/" >
+            
+                <span>codingNow 4 还原二叉树</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
+12345678910111213141516171819202122232425262728293031/** * Definition for binary tree * public class TreeNode &#123; *     int val; *     TreeNode left; *     TreeNode right;...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/23/关于二叉树/" >
+            
+                <span>关于二叉树</span>
+        </a>
+        <div class="abstract-content">
+            #二叉树的前序、中序、后序、层序遍历和还原。  #前序ABC，中序BAC，后序BCA。
+一、描绘二叉树
+123456789101112131415public class Node &#123;    private String name = "";    public Node leftChild;    public Node rightChild;    public Node(String name) &#123;        this.name = name;    &#125;    public Node() &#123;    &#125;    public voi...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "浅析java">浅析java</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/22/codingNow-3-从头到尾打印空格/" >
+            
+                <span>codingNow 3 从头到尾打印空格</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
+方法一：利用堆栈，单个读取存入栈中，再逐个pop,实线从后往前。
+12345678910111213141516171819public ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) &#123;    Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();    while (listNode != null) &#123;        stack.push(listNode.va...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/22</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/22/codingNow-2-替换空格/" >
+            
+                <span>codingNow 2 替换空格</span>
+        </a>
+        <div class="abstract-content">
+            题目描述请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”
+123456789101112131415161718192021222324252627282930313233343536public class Test04 &#123;    public static String replaceSpace(StringBuffer str) &#123;        int usedlength = str.length();        if (str == null) &#123;      ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/22</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/21/codingNow-1-二维数组的查找/" >
+            
+                <span>codingNow 1 二维数组的查找</span>
+        </a>
+        <div class="abstract-content">
+            题目描述：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
+规律：首先选取数组中右上角的数字。如果该数字等于要查找的数字，查找过程结束：如果该数字大于要查找的数字，剔除这个数字所在的列：如果该数字小于要查找的数字，剔除这个数字所在的行。也就是说如果要查找的数字不在数组的右上角，则每－次都在数组的查找范围中剔除）行或者一列，这样每一步都可以缩小查找的范围，直到找到要查找的数字，或者查找范围为空。
+123456789101112131415161718192021222324...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/08/21/LeetCode第26号问题：删除排序数组中的重复项/" >
             
                 <span>LeetCode 第 26 号问题：删除排序数组中的重复项</span>
@@ -557,154 +710,10 @@ height:50vh;
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/18/控制反转（IoC）和依赖注入（DI）的区别/" >
-            
-                <span>控制反转（IoC）和依赖注入（DI）的区别</span>
-        </a>
-        <div class="abstract-content">
-            IOC   inversion of control  控制反转
-DI   Dependency Injection  依赖注入
-要理解这两个概念，首先要搞清楚以下几个问题：
-参与者都有谁？依赖：谁依赖于谁？为什么需要依赖？注入：谁注入于谁？到底注入什么？控制反转：谁控制谁？控制什么？为何叫反转（有反转就应该有正转了）？依赖注入和控制反转是同一概念吗？        下面就来简要的回答一下上述问题，把这些问题搞明白了，IoC/DI也就明白了。（1）参与者都有谁：
-一般有三方参与者，一个是某个对象；一个是IoC/DI的容器；另一个是某个对象的外部资源。
-又要名词解释一下，某个对象指的就是任...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/18</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "浅析java">浅析java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/" >
-            
-                <span>LeetCode 第 3 号问题：无重复字符的最长子串</span>
-        </a>
-        <div class="abstract-content">
-            题目来源于 LeetCode 上第 3 号问题：无重复字符的最长子串。题目难度为 Medium，目前通过率为 29.0% 。
-题目描述给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-示例 1:
-123输入: "abcabcbb"输出: 3 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
-
-题目解析建立一个256位大小的整型数组 freg ，用来建立字符和其出现位置之间的映射。
-维护一个滑动窗口，窗口内的都是没有重复的字符，去尽可能的扩大窗口的大小，窗口不停的向右滑动。
-
-（1）如果当前遍历到的字符从未出现过，那么直接扩大右边界；
-（2）如果当前遍历到...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/LeetCode第2号问题：两数相加/" >
-            
-                <span>LeetCode 第 2 号问题：两数相加</span>
-        </a>
-        <div class="abstract-content">
-            题目来源于 LeetCode 上第 2 号问题：两数相加。题目难度为 Medium，目前通过率为 33.9% 。
-题目描述给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
-如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
-您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
-示例：
-123输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)输出：7 -&gt; 0 -&gt; 8原因：342 + 465 = 807
-
-题目解析设立一个表示进位的...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/27/LeetCode第1号问题：两数之和/" >
-            
-                <span>LeetCode 第 1 号问题：两数之和</span>
-        </a>
-        <div class="abstract-content">
-            题目来源于 LeetCode 上第 1 号问题：两数之和。题目难度为 Easy，目前通过率为 45.8% 。
-题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
-你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
-示例:
-1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
-
-题目解析使用查找表来解决该问题。
-设置一个 map 容器 record 用来记录元素的值与索...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/27</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/page/2/">&#60; PREV</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
+        <a class="extend prev" rel="prev" href="/page/2/">&#60; PREV</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -1320,9 +1329,102 @@ DI   Dependency Injection  依赖注入
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 29
+        Total : 34
         </div>
         <!-- search  -->
         
@@ -1339,6 +1441,31 @@ DI   Dependency Injection  依赖注入
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-24-二叉树中和为某一值的路径/" >codingNow 24 二叉树中和为某一值的路径</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-23-二叉搜索树的后序遍历序列/" >codingNow 23 二叉搜索树的后序遍历序列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-20-实现包含min函数的栈/" >codingNow 20 实现包含min函数的栈</a>
+        </li>
     
     
         <li class="archive-post-item">
