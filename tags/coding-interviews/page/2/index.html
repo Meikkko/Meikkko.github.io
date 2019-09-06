@@ -361,18 +361,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/25/codingNow-15-反转链表/" >
+        <a class="abstract-title" href = "/2019/09/04/codingNow-56-删除链表中重复的结点/" >
             
-                <span>codingNow 15 反转链表</span>
+                <span>codingNow 56 删除链表中重复的结点</span>
         </a>
         <div class="abstract-content">
-            题目描述输入一个链表，反转链表后，输出新链表的表头。
-123456789101112131415public class Solution &#123;    public ListNode ReverseList(ListNode head) &#123;        ListNode next = null;        ListNode pre = null;        while (head != null) &#123;            next = head.next;            head.next = pre;            pre = h...
+            题目描述在一个排序的链表中，存在重复的结点，请删除该链表中重复的结点，重复的结点不保留，返回链表头指针。 例如，链表1-&gt;2-&gt;3-&gt;3-&gt;4-&gt;4-&gt;5 处理后为 1-&gt;2-&gt;5
+12345678910111213141516171819202122232425public class Solution &#123;    public ListNode deleteDuplication(ListNode pHead) &#123;        if (pHead==null || pHead.next==null)&#123;ret...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/25</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
             </div>
             <!-- tags  -->
             
@@ -391,18 +391,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/25/codingNow-14-输出链表中倒数第k个元素/" >
+        <a class="abstract-title" href = "/2019/09/04/codingNow-55-链表中环的入口结点/" >
             
-                <span>codingNow 14 输出链表中倒数第k个元素</span>
+                <span>codingNow 55 链表中环的入口结点</span>
         </a>
         <div class="abstract-content">
-            题目描述输入一个链表，输出该链表中倒数第k个结点。
-1.双指针（两者相差k-1）123456789101112131415161718192021222324/*public class ListNode &#123;    int val;    ListNode next = null;    ListNode(int val) &#123;        this.val = val;    &#125;&#125;*/public class Solution &#123;    public ListNode FindKthToTail(ListNode head,int k)...
+            题目描述给一个链表，若其中包含环，请找出该链表的环的入口结点，否则，输出null。
+set法123456789101112131415161718import java.util.HashSet;public class Solution &#123;    public ListNode EntryNodeOfLoop(ListNode pHead) &#123;        if (pHead == null) &#123;            return null;        &#125;        HashSet&lt;ListNode&gt; set = new ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/25</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
             </div>
             <!-- tags  -->
             
@@ -421,18 +421,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-13-数组按奇偶进行原序归类/" >
+        <a class="abstract-title" href = "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >
             
-                <span>codingNow 13 数组按奇偶进行原序归类</span>
+                <span>codingNow 54 字符流中第一个不重复的字符</span>
         </a>
         <div class="abstract-content">
-            题目描述输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有的奇数位于数组的前半部分，所有的偶数位于数组的后半部分，并保证奇数和奇数，偶数和偶数之间的相对位置不变。
-1234567891011121314public class Solution &#123;    public void reOrderArray(int [] array) &#123;        for(int i = 0;i &lt; array.length; i++)&#123;            for(int j = array.length-1; j &gt; i; j--)&#123...
+            题目描述请实现一个函数用来找出字符流中第一个只出现一次的字符。例如，当从字符流中只读出前两个字符”go”时，第一个只出现一次的字符是”g”。当从该字符流中读出前六个字符“google”时，第一个只出现一次的字符是”l”。输出描述:如果当前字符流没有存在出现一次的字符，返回#字符。
+1234567891011121314151617181920212223import java.util.ArrayList;import java.util.HashMap;public class Solution &#123;    HashMap&lt;Character, Integer&gt; m...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
             </div>
             <!-- tags  -->
             
@@ -451,18 +451,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-12-纯数学方法求幂次方/" >
+        <a class="abstract-title" href = "/2019/09/04/codingNow-53-表示数值的字符串/" >
             
-                <span>codingNow 12 纯数学方法求幂次方</span>
+                <span>codingNow 53 表示数值的字符串</span>
         </a>
         <div class="abstract-content">
-            题目描述给定一个double类型的浮点数base和int类型的整数exponent。求base的exponent次方。保证base和exponent不同时为0
-1234567891011121314151617181920212223242526public class Solution &#123;    public double Power(double base, int exponent) &#123;        double result = 1;        int n = exponent;        double dev = base;        if (...
+            题目描述请实现一个函数用来判断字符串是否表示数值（包括整数和小数）。例如，字符串”+100”,”5e2”,”-123”,”3.1416”和”-1E-16”都表示数值。 但是”12e”,”1a3.14”,”1.2.3”,”+-5”和”12e+4.3”都不是。
+1234567891011121314151617181920212223242526272829303132333435public class Solution &#123;    int index = 0;    public boolean isNumeric(char[] str) &#123;        if (st...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
             </div>
             <!-- tags  -->
             
@@ -481,20 +481,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >
+        <a class="abstract-title" href = "/2019/09/04/codingNow-52-正则表达式匹配/" >
             
-                <span>codingNow 11 一个数的二进制中1的个数</span>
+                <span>codingNow 52 正则表达式匹配</span>
         </a>
         <div class="abstract-content">
-            题目描述输入一个整数，输出该数二进制表示中1的个数。其中负数用补码表示。
-12345678910public class Solution &#123;    public int NumberOf1(int n) &#123;        int count = 0;        while(n!= 0)&#123;            count++;            n = n &amp; (n - 1);         &#125;        return count;    &#125;&#125;
-
-个人总结如果一个整数不为0，那么他的二进制形式至少有一位是...
+            题目描述请实现一个函数用来匹配包括’.’和’‘的正则表达式。模式中的字符’.’表示任意一个字符，而’‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”abaca”匹配，但是与”aa.a”和”ab*a”均不匹配
+12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849public class Solution &#123;    public boolean match(char[]...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
             </div>
             <!-- tags  -->
             
@@ -513,18 +511,17 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-10-矩形覆盖/" >
+        <a class="abstract-title" href = "/2019/09/03/codingNow-51-构建乘积数组/" >
             
-                <span>codingNow 10 矩形覆盖</span>
+                <span>codingNow 51 构建乘积数组</span>
         </a>
         <div class="abstract-content">
-            题目描述我们可以用2x1的小矩形横着或者竖着去覆盖更大的矩形。请问用n个2x1的小矩形无重叠地覆盖一个2xn的大矩形，总共有多少种方法？
-12345678910111213public class Solution &#123;    public int RectCover(int target) &#123;                if (target &lt;= 0) &#123;            return 0;        &#125; else if (target == 1) &#123;            return 1;        &#125...
+            题目描述12345678910111213141516171819public class Solution &#123;    public int[] multiply(int[] A) &#123;        int length = A.length;        int[] B = new int[length];        if (A == null || length == 0) &#123;            return B;        &#125;        B[0] = 1;        for (int i = 1; i &lt; leng...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
             </div>
             <!-- tags  -->
             
@@ -543,18 +540,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-9-变态跳箱子/" >
+        <a class="abstract-title" href = "/2019/09/03/codingNow-50-数组中重复的数字/" >
             
-                <span>codingNow 9 变态跳箱子</span>
+                <span>codingNow 50 数组中重复的数字</span>
         </a>
         <div class="abstract-content">
-            题目描述一只青蛙一次可以跳上1级台阶，也可以跳上2级……它也可以跳上n级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
-1234567891011public class Solution &#123;    public int JumpFloorII(int target) &#123;        if (target &lt;= 0) &#123;            return -1;        &#125; else if (target == 1) &#123;            return 1;        &#125; else &#123;     ...
+            题目描述在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。
+HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#123;    public boolean duplicate(int numbers[],int length,int [] duplication) &#...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
             </div>
             <!-- tags  -->
             
@@ -573,18 +570,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-8-跳格子问题/" >
+        <a class="abstract-title" href = "/2019/09/03/codingNow-49-把字符串转换成整数/" >
             
-                <span>codingNow 8 跳格子问题</span>
+                <span>codingNow 49 把字符串转换成整数</span>
         </a>
         <div class="abstract-content">
-            题目描述一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。
-12345678910111213public class Solution &#123;    public int JumpFloor(int target) &#123;        if (target &lt;= 0) &#123;            return -1;        &#125; else if (target == 1) &#123;            return 1;        &#125; else if (t...
+            题目描述将一个字符串转换成一个整数(实现Integer.valueOf(string)的功能，但是string不符合数字要求时返回0)，要求不能使用字符串转换整数的库函数。 数值为0或者字符串不是一个合法的数值则返回0。
+12345678910111213141516171819202122232425public class Solution &#123;    public int StrToInt(String str) &#123;        if (str == null || str.trim().equals("")) &#123;            return ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
             </div>
             <!-- tags  -->
             
@@ -603,18 +600,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/24/codingNow-7-斐波那契数列问题/" >
+        <a class="abstract-title" href = "/2019/09/03/codingNow-48-不用加减乘除做加法/" >
             
-                <span>codingNow 7 斐波那契数列问题</span>
+                <span>codingNow 48 不用加减乘除做加法</span>
         </a>
         <div class="abstract-content">
-            题目描述大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。n&lt;=39递归：
-1234567891011public class Solution &#123;    public int Fibonacci(int n) &#123;        if (n == 0) &#123;            return 0;        &#125; else if (n == 1) &#123;            return 1;        &#125; else &#123;            return ...
+            题目描述不用加减乘除做加法
+123456789101112131415public class Solution &#123;    public int Add(int num1,int num2) &#123;        while (num2 != 0) &#123;            //求进位            int carry = (num1&amp;num2)&lt;&lt;1;            //相加，但不包含各位进位            num1 ^= num2;            //进位参与下次相加，直到不存在进位            ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/24</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
             </div>
             <!-- tags  -->
             
@@ -633,18 +630,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/codingNow-6-旋转数组的二分查找/" >
+        <a class="abstract-title" href = "/2019/09/03/codingNow-47-求1-2-3-n/" >
             
-                <span>codingNow 6 旋转数组的二分查找</span>
+                <span>codingNow 47 求1+2+3+...+n</span>
         </a>
         <div class="abstract-content">
-            题目描述把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素。例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
-123456789101112131415161718192021import java.util.ArrayList;    public class Solution &#123;        public int minNumberInRotateArray(int [] array) &#123;  ...
+            题目描述求1+2+3+…+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
+1234567891011public class Solution &#123;    //解题思路：    //1.需利用逻辑与的短路特性实现递归终止。     //2.当n==0时，(n&gt;0)&amp;&amp;((sum+=Sum_Solution(n-1))&gt;0)只执行前面的判断，为false，然后直接返回0；    //3.当n&gt;0时，执行sum+=Sum_Solution(n-1)，实现递归计算Sum_Solu...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
             </div>
             <!-- tags  -->
             
@@ -660,7 +657,7 @@
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/tags/coding-interviews/">&#60; PREV</a><a class="page-number" href="/tags/coding-interviews/">1</a><span class="page-number current">2</span><a class="page-number" href="/tags/coding-interviews/page/3/">3</a><a class="extend next" rel="next" href="/tags/coding-interviews/page/3/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/tags/coding-interviews/">&#60; PREV</a><a class="page-number" href="/tags/coding-interviews/">1</a><span class="page-number current">2</span><a class="page-number" href="/tags/coding-interviews/page/3/">3</a><a class="page-number" href="/tags/coding-interviews/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/tags/coding-interviews/page/7/">7</a><a class="extend next" rel="next" href="/tags/coding-interviews/page/3/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -1255,9 +1252,832 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 35
+        Total : 76
         </div>
         <!-- search  -->
         
@@ -1277,6 +2097,211 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-66-减绳子/" >codingNow 66 减绳子</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span><a class="archive-post-title" href= "/2019/09/05/codingNow-63-数据流中的中位数/" >codingNow 63 数据流中的中位数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span><a class="archive-post-title" href= "/2019/09/05/codingNow-62-二叉搜索树的第k个结点/" >codingNow 62 二叉搜索树的第k个结点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span><a class="archive-post-title" href= "/2019/09/05/codingNow-61-序列化二叉树/" >codingNow 61 序列化二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span><a class="archive-post-title" href= "/2019/09/05/codingNow-60-层序遍历二叉树/" >codingNow 60 层序遍历二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span><a class="archive-post-title" href= "/2019/09/05/codingNow-59-之字形打印二叉树/" >codingNow 59 之字形打印二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-58-对称的二叉树/" >codingNow 58 对称的二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-57-二叉树的下一个结点/" >codingNow 57 二叉树的下一个结点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-56-删除链表中重复的结点/" >codingNow 56 删除链表中重复的结点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-53-表示数值的字符串/" >codingNow 53 表示数值的字符串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-52-正则表达式匹配/" >codingNow 52 正则表达式匹配</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-51-构建乘积数组/" >codingNow 51 构建乘积数组</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-48-不用加减乘除做加法/" >codingNow 48 不用加减乘除做加法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-47-求1-2-3-n/" >codingNow 47 求1+2+3+...+n</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >codingNow 46 圆圈中最后剩下的数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/02</span><a class="archive-post-title" href= "/2019/09/02/codingNow-40-数组中出现一次的数字/" >codingNow 40 数组中出现一次的数字</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/02</span><a class="archive-post-title" href= "/2019/09/02/codingNow-39-平衡二叉树/" >codingNow 39 平衡二叉树</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/02</span><a class="archive-post-title" href= "/2019/09/02/codingNow-38-求二叉树的深度/" >codingNow 38 求二叉树的深度</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/30</span><a class="archive-post-title" href= "/2019/08/30/codingNow-37-数字在有序数组中出现的次数/" >codingNow 37 数字在有序数组中出现的次数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2019/08/29/codingNow-36-两个链表中的第一个公共点/" >codingNow 36 两个链表中的第一个公共点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/29</span><a class="archive-post-title" href= "/2019/08/29/codingNow-35-数组中的逆序对/" >codingNow 35 数组中的逆序对</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-32-把数组排成最小的数/" >codingNow 32 把数组排成最小的数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-31-整数中1出现的次数/" >codingNow 31 整数中1出现的次数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-30-连续子数组的最大和/" >codingNow 30 连续子数组的最大和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2019/08/27/codingNow-29-求一个数组前k个顺序元素/" >codingNow 29 求一个数组前k个顺序元素</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2019/08/27/codingNow-28-数组中出现过超过一半的数字/" >codingNow 28 数组中出现过超过一半的数字</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2019/08/27/codingNow-27-字符串的排列/" >codingNow 27 字符串的排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">08/27</span><a class="archive-post-title" href= "/2019/08/27/codingNow-26-二叉搜索树与双向链表/" >codingNow 26 二叉搜索树与双向链表</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-25-复杂链表的复制/" >codingNow 25 复杂链表的复制</a>
         </li>
     
@@ -1292,12 +2317,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
@@ -1347,12 +2372,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
