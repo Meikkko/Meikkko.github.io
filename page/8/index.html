@@ -374,36 +374,24 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/LeetCode第9号问题：回文数/" >
+        <a class="abstract-title" href = "/2019/08/28/codingNow-30-连续子数组的最大和/" >
             
-                <span>LeetCode 第 9 号问题：回文数</span>
+                <span>codingNow 30 连续子数组的最大和</span>
         </a>
         <div class="abstract-content">
-            题目来源于 LeetCode 第 9 号问题：回文数。题目难度为 Easy，目前通过率为 56.0%。
-题目描述判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
-示例 1:
-12输入: 121输出: true
-
-示例 2:
-123输入: -121输出: false解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
-
-示例 3:
-123输入: 10输出: false解释: 从右向左读, 为 01 。因此它不是一个回文数。
-
-进阶:
-你能不将整数转为字符串来解决这个问题吗？
-题目解析解法一：普通解法最好理解的一...
+            题目描述在古老的一维模式识别中,常常需要计算连续子向量的最大和,当向量全为正数的时候,问题很好解决。但是,如果向量中包含负数,是否应该包含某个负数,并期望旁边的正数会弥补它呢？例如:{6,-3,-2,7,-15,1,2,2},连续子向量的最大和为8(从第0个开始,到第3个为止)。给一个数组，返回它的最大连续子序列的和，你会不会被他忽悠住？(子向量的长度至少是1)
+1234567891011121314151617public class Solution &#123;    public int FindGreatestSumOfSubArray(int[] array) &#123; ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/28</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -416,24 +404,24 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/浅析用枚举实现单例模式/" >
+        <a class="abstract-title" href = "/2019/08/27/codingNow-29-求一个数组前k个顺序元素/" >
             
-                <span>浅析用枚举实现单例模式</span>
+                <span>codingNow 29 求一个数组前k个顺序元素</span>
         </a>
         <div class="abstract-content">
-            1 引言        相信如果能看到我这篇博客的小伙伴，肯定都看过Joshua Bloch大神说过的这句话：“单元素的枚举类型已经成为实现Singleton的最佳方法”。其实，第一次读到这句话，我连其中说的单元素指什么都不知道，尴尬。后来，网上看了搜索了好几篇文章，发现基本上都是转载自相同的一篇文章，而我的困惑是“为什么要用枚举类型实现单例模式呢”，文章中都说的很笼统，于是决定自己结合Joshua Bloch的《effective java》写一篇总结下，给后来的同学做个参考。
-2 什么是单例模式        关于什么是单例模式的定义，我之前的一篇文章（最简单的设计模式–单例模式）中...
+            题目描述输入n个整数，找出其中最小的K个数。例如输入4,5,1,6,2,7,3,8这8个数字，则最小的4个数字是1,2,3,4,。
+1234567891011121314151617181920212223242526import java.util.ArrayList;public class Solution &#123;    public ArrayList&lt;Integer&gt; GetLeastNumbers_Solution(int[] input, int k) &#123;        ArrayList&lt;Integer&gt; result = new ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/27</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "浅析java">浅析java</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -446,28 +434,23 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/18/控制反转（IoC）和依赖注入（DI）的区别/" >
+        <a class="abstract-title" href = "/2019/08/27/codingNow-28-数组中出现过超过一半的数字/" >
             
-                <span>控制反转（IoC）和依赖注入（DI）的区别</span>
+                <span>codingNow 28 数组中出现过超过一半的数字</span>
         </a>
         <div class="abstract-content">
-            IOC   inversion of control  控制反转
-DI   Dependency Injection  依赖注入
-要理解这两个概念，首先要搞清楚以下几个问题：
-参与者都有谁？依赖：谁依赖于谁？为什么需要依赖？注入：谁注入于谁？到底注入什么？控制反转：谁控制谁？控制什么？为何叫反转（有反转就应该有正转了）？依赖注入和控制反转是同一概念吗？        下面就来简要的回答一下上述问题，把这些问题搞明白了，IoC/DI也就明白了。（1）参与者都有谁：
-一般有三方参与者，一个是某个对象；一个是IoC/DI的容器；另一个是某个对象的外部资源。
-又要名词解释一下，某个对象指的就是任...
+            题目描述用hashmap12345678910111213141516171819202122232425public class Solution &#123;    public int MoreThanHalfNum_Solution(int[] array) &#123;        HashMap&lt;Integer, Integer&gt; map = new HashMap&lt;Integer, Integer&gt;();        for (int i = 0; i &lt; array.length; i++) &#123;            if (!...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/18</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/27</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "浅析java">浅析java</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -480,32 +463,24 @@ DI   Dependency Injection  依赖注入
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/" >
+        <a class="abstract-title" href = "/2019/08/27/codingNow-27-字符串的排列/" >
             
-                <span>LeetCode 第 3 号问题：无重复字符的最长子串</span>
+                <span>codingNow 27 字符串的排列</span>
         </a>
         <div class="abstract-content">
-            题目来源于 LeetCode 上第 3 号问题：无重复字符的最长子串。题目难度为 Medium，目前通过率为 29.0% 。
-题目描述给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-示例 1:
-123输入: "abcabcbb"输出: 3 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。
-
-题目解析建立一个256位大小的整型数组 freg ，用来建立字符和其出现位置之间的映射。
-维护一个滑动窗口，窗口内的都是没有重复的字符，去尽可能的扩大窗口的大小，窗口不停的向右滑动。
-
-（1）如果当前遍历到的字符从未出现过，那么直接扩大右边界；
-（2）如果当前遍历到...
+            题目描述输入一个字符串,按字典序打印出该字符串中字符的所有排列。例如输入字符串abc,则打印出由字符a,b,c所能排列出来的所有字符串abc,acb,bac,bca,cab和cba。
+12345678910111213141516171819202122232425262728293031323334353637import java.util.ArrayList;import java.util.Collections;import java.util.HashSet;import java.util.Set;public class Solution &#123;    public...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/27</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -518,30 +493,24 @@ DI   Dependency Injection  依赖注入
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/28/LeetCode第2号问题：两数相加/" >
+        <a class="abstract-title" href = "/2019/08/27/codingNow-26-二叉搜索树与双向链表/" >
             
-                <span>LeetCode 第 2 号问题：两数相加</span>
+                <span>codingNow 26 二叉搜索树与双向链表</span>
         </a>
         <div class="abstract-content">
-            题目来源于 LeetCode 上第 2 号问题：两数相加。题目难度为 Medium，目前通过率为 33.9% 。
-题目描述给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
-如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
-您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
-示例：
-123输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)输出：7 -&gt; 0 -&gt; 8原因：342 + 465 = 807
-
-题目解析设立一个表示进位的...
+            题目描述输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。要求不能创建任何新的结点，只能调整树中结点指针的指向。
+123456789101112131415161718192021222324252627282930public TreeNode Convert(TreeNode root) &#123;    if (root == null) &#123;        return null;    &#125;    //若搜索到了叶子节点，则返回返回当前节点    if (root.left == null &amp;&amp; root.right == null)...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/28</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/27</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -554,30 +523,144 @@ DI   Dependency Injection  依赖注入
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/07/27/LeetCode第1号问题：两数之和/" >
+        <a class="abstract-title" href = "/2019/08/26/codingNow-25-复杂链表的复制/" >
             
-                <span>LeetCode 第 1 号问题：两数之和</span>
+                <span>codingNow 25 复杂链表的复制</span>
         </a>
         <div class="abstract-content">
-            题目来源于 LeetCode 上第 1 号问题：两数之和。题目难度为 Easy，目前通过率为 45.8% 。
-题目描述给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
-你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
-示例:
-1234给定 nums = [2, 7, 11, 15], target = 9因为 nums[0] + nums[1] = 2 + 7 = 9所以返回 [0, 1]
-
-题目解析使用查找表来解决该问题。
-设置一个 map 容器 record 用来记录元素的值与索...
+            题目描述输入一个复杂链表（每个节点中有节点值，以及两个指针，一个指向下一个节点，另一个特殊指针指向任意一个节点），返回结果为复制后复杂链表的head。（注意，输出结果中请不要返回参数中的节点引用，否则判题程序会直接返回空）
+1234567891011121314151617181920212223242526272829303132333435363738394041424344454647/*public class RandomListNode &#123;    int label;    RandomListNode next = null;    RandomListNode ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/07/27</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/26</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/26/codingNow-24-二叉树中和为某一值的路径/" >
+            
+                <span>codingNow 24 二叉树中和为某一值的路径</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一颗二叉树的根节点和一个整数，打印出二叉树中结点值的和为输入整数的所有路径。路径定义为从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。(注意: 在返回值的list中，数组长度大的数组靠前)
+12345678910111213141516171819202122public class Solution &#123;    private ArrayList&lt;ArrayList&lt;Integer&gt;&gt; listAll = new ArrayList&lt;ArrayList&lt;Integer&gt;&gt;();    private Arra...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/26/codingNow-23-二叉搜索树的后序遍历序列/" >
+            
+                <span>codingNow 23 二叉搜索树的后序遍历序列</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历的结果。如果是则输出Yes,否则输出No。假设输入的数组的任意两个数字都互不相同。
+12345678910111213141516171819202122232425262728293031public class Solution &#123;    public boolean VerifySquenceOfBST(int [] sequence) &#123;        if (sequence.length &lt;= 0 || sequence == null) &#123;            return...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/26/codingNow-22-由上往下打印二叉树/" >
+            
+                <span>codingNow 22 由上往下打印二叉树</span>
+        </a>
+        <div class="abstract-content">
+            题目描述从上往下打印出二叉树的每个节点，同层节点从左至右打印。
+1234567891011121314151617181920212223public class Solution &#123;    public ArrayList&lt;Integer&gt; PrintFromTopToBottom(TreeNode root) &#123;        ArrayList&lt;TreeNode&gt; treeNodes = new ArrayList&lt;&gt;();        ArrayList&lt;Integer&gt; tree = new ArrayLis...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >
+            
+                <span>codingNow 21 栈的压入，弹出序列</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是否可能为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如序列1,2,3,4,5是某栈的压入顺序，序列4,5,3,2,1是该压栈序列对应的一个弹出序列，但4,3,5,1,2就不可能是该压栈序列的弹出序列。（注意：这两个序列的长度是相等的）
+1234567891011121314151617import java.util.ArrayList;import java.util.Stack;public class Solution &#123;    public boolean IsPopOrder(int [] p...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -587,7 +670,7 @@ DI   Dependency Injection  依赖注入
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/page/7/">&#60; PREV</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span>
+        <a class="extend prev" rel="prev" href="/page/7/">&#60; PREV</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="page-number" href="/page/10/">10</a><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/9/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -2110,9 +2193,558 @@ DI   Dependency Injection  依赖注入
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 76
+        Total : 103
         </div>
         <!-- search  -->
         
@@ -2129,6 +2761,176 @@ DI   Dependency Injection  依赖注入
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/27</span><a class="archive-post-title" href= "/2019/09/27/2-工厂设计模式/" >2 工厂设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/27</span><a class="archive-post-title" href= "/2019/09/27/1-单例设计模式/" >1 单例设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/依赖关系传递的三种方式/" >依赖关系传递的三种方式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/19</span><a class="archive-post-title" href= "/2019/09/19/leetcode-36-有效的数独/" >leetcode 36. 有效的数独</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/18</span><a class="archive-post-title" href= "/2019/09/18/leetcode-34-在排序数组中查找元素的第一个和最后一个位置/" >leetcode 34. 在排序数组中查找元素的第一个和最后一个位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/2019/09/17/leetcode-33-搜索旋转排序数组/" >leetcode 33. 搜索旋转排序数组</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/2019/09/17/leetcode-29-两数相除/" >leetcode 29. 两数相除</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/2019/09/17/leetcode-24-两两交换链表中的节点/" >leetcode 24. 两两交换链表中的节点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/leetcode-22-括号生成/" >leetcode 22. 括号生成</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/leetcode-19-删除链表的倒数第N个节点/" >leetcode 19. 删除链表的倒数第N个节点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/leetcode-18-四数之和/" >leetcode 18. 四数之和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/leetcode-17-电话号码的字母组合/" >leetcode 17. 电话号码的字母组合</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/leetcode-16-最接近的三数之和/" >leetcode 16. 最接近的三数之和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/leetcode-15-三数之和/" >leetcode 15. 三数之和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-12-整数转罗马数字/" >leetcode 12. 整数转罗马数字</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-6-Z-字形变换/" >leetcode 6. Z 字形变换</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-5-最长回文子串/" >leetcode 5. 最长回文子串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-3-无重复字符的最长子串/" >leetcode 3. 无重复字符的最长子串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-2-两数相加/" >leetcode 2. 两数相加</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-38-报数/" >leetcode 38. 报数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-26-删除排序数组中的重复项/" >leetcode 26. 删除排序数组中的重复项</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-7-整数反转/" >leetcode 7. 整数反转</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-1-两数之和/" >leetcode 1. 两数之和</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -2212,12 +3014,12 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
         </li>
     
     
@@ -2242,12 +3044,12 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
         </li>
     
     
@@ -2257,7 +3059,7 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
@@ -2292,12 +3094,12 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
         </li>
     
     
@@ -2352,12 +3154,12 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -2407,12 +3209,12 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
@@ -2467,27 +3269,7 @@ DI   Dependency Injection  依赖注入
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第26号问题：删除排序数组中的重复项/" >LeetCode 第 26 号问题：删除排序数组中的重复项</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第21号问题：合并两个有序链表/" >LeetCode 第 21 号问题：合并两个有序链表</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第20号问题：有效的括号/" >LeetCode 第 20 号问题：有效的括号</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/浅析用枚举实现单例模式/" >浅析用枚举实现单例模式</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第9号问题：回文数/" >LeetCode 第 9 号问题：回文数</a>
         </li>
     
     
@@ -2495,29 +3277,18 @@ DI   Dependency Injection  依赖注入
             <span class="archive-post-date">08/18</span><a class="archive-post-title" href= "/2019/08/18/控制反转（IoC）和依赖注入（DI）的区别/" >控制反转（IoC）和依赖注入（DI）的区别</a>
         </li>
     
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/28</span><a class="archive-post-title" href= "/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/" >LeetCode 第 3 号问题：无重复字符的最长子串</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/28</span><a class="archive-post-title" href= "/2019/07/28/LeetCode第2号问题：两数相加/" >LeetCode 第 2 号问题：两数相加</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/27</span><a class="archive-post-title" href= "/2019/07/27/LeetCode第1号问题：两数之和/" >LeetCode 第 1 号问题：两数之和</a>
-        </li>
-    
     </div>
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="leetcode"><span class="iconfont-archer">&#xe606;</span>leetcode</span>
+        <span class="sidebar-tag-name" data-tags="设计模式学习笔记"><span class="iconfont-archer">&#xe606;</span>设计模式学习笔记</span>
     
         <span class="sidebar-tag-name" data-tags="coding-interviews"><span class="iconfont-archer">&#xe606;</span>coding-interviews</span>
+    
+        <span class="sidebar-tag-name" data-tags="leetcode"><span class="iconfont-archer">&#xe606;</span>leetcode</span>
+    
+        <span class="sidebar-tag-name" data-tags="Spring源码阅读"><span class="iconfont-archer">&#xe606;</span>Spring源码阅读</span>
     
         <span class="sidebar-tag-name" data-tags="浅析java"><span class="iconfont-archer">&#xe606;</span>浅析java</span>
     

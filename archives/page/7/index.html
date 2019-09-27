@@ -361,18 +361,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/codingNow-6-旋转数组的二分查找/" >
+        <a class="abstract-title" href = "/2019/09/02/codingNow-40-数组中出现一次的数字/" >
             
-                <span>codingNow 6 旋转数组的二分查找</span>
+                <span>codingNow 40 数组中出现一次的数字</span>
         </a>
         <div class="abstract-content">
-            题目描述把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个非递减排序的数组的一个旋转，输出旋转数组的最小元素。例如数组{3,4,5,1,2}为{1,2,3,4,5}的一个旋转，该数组的最小值为1。NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
-123456789101112131415161718192021import java.util.ArrayList;    public class Solution &#123;        public int minNumberInRotateArray(int [] array) &#123;  ...
+            题目描述一个整型数组里除了两个数字之外，其他的数字都出现了两次。请写程序找出这两个只出现一次的数字。
+两个数字各出现一次，其他都出现了两次123456789101112131415161718192021222324252627//num1,num2分别为长度为1的数组。传出参数//将num1[0],num2[0]设置为返回结果public class Solution &#123;    public void FindNumsAppearOnce(int [] array,int num1[] , int num2[]) &#123;        if (array == null...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/02</span>
             </div>
             <!-- tags  -->
             
@@ -391,18 +391,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/codingNow-5-用两个栈实现队列/" >
+        <a class="abstract-title" href = "/2019/09/02/codingNow-39-平衡二叉树/" >
             
-                <span>codingNow 5 用两个栈实现队列</span>
+                <span>codingNow 39 平衡二叉树</span>
         </a>
         <div class="abstract-content">
-            题目描述在一个二维数组中（每个一维数组的长度相同），每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
-1234567891011121314151617181920public class Solution &#123;    Stack&lt;Integer&gt; stack1 = new Stack&lt;Integer&gt;();    Stack&lt;Integer&gt; stack2 = new Stack&lt;Integer&gt;();    public void...
+            题目描述输入一棵二叉树，判断该二叉树是否是平衡二叉树。
+遍历每个节点1234567891011121314public class Solution &#123;    public boolean IsBalanced_Solution(TreeNode root) &#123;        if (root == null) &#123;            return true;        &#125;        return Math.abs(TreeDepth(root.left) - TreeDepth(root.right)) &lt;= 1 &amp;&am...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/02</span>
             </div>
             <!-- tags  -->
             
@@ -421,18 +421,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/codingNow-4-还原二叉树/" >
+        <a class="abstract-title" href = "/2019/09/02/codingNow-38-求二叉树的深度/" >
             
-                <span>codingNow 4 还原二叉树</span>
+                <span>codingNow 38 求二叉树的深度</span>
         </a>
         <div class="abstract-content">
-            题目描述输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,6}，则重建二叉树并返回。
-12345678910111213141516171819202122232425262728293031/** * Definition for binary tree * public class TreeNode &#123; *     int val; *     TreeNode left; *     TreeNode right;...
+            题目描述输入一棵二叉树，求该树的深度。从根结点到叶结点依次经过的结点（含根、叶结点）形成树的一条路径，最长路径的长度为树的深度。
+12345678public class Solution &#123;    public int TreeDepth(TreeNode root) &#123;        if (root == null) &#123;            return 0;        &#125;        return Math.max(TreeDepth(root.left), TreeDepth(root.right))+1;    &#125;&#...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/02</span>
             </div>
             <!-- tags  -->
             
@@ -451,50 +451,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/23/关于二叉树/" >
+        <a class="abstract-title" href = "/2019/08/30/codingNow-37-数字在有序数组中出现的次数/" >
             
-                <span>关于二叉树</span>
+                <span>codingNow 37 数字在有序数组中出现的次数</span>
         </a>
         <div class="abstract-content">
-            #二叉树的前序、中序、后序、层序遍历和还原。  #前序ABC，中序BAC，后序BCA。
-一、描绘二叉树
-123456789101112131415public class Node &#123;    private String name = "";    public Node leftChild;    public Node rightChild;    public Node(String name) &#123;        this.name = name;    &#125;    public Node() &#123;    &#125;    public voi...
+            题目描述统计一个数字在排序数组中出现的次数。
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051链接：https://www.nowcoder.com/questionTerminal/70610bf967994b22bb1c26f9ae901fa2?f=discussion来源：牛客网public class Solution &#123;    public int GetNumberOfK(int [] array , int k) &#123; ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/23</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "浅析java">浅析java</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/22/codingNow-3-从头到尾打印空格/" >
-            
-                <span>codingNow 3 从头到尾打印空格</span>
-        </a>
-        <div class="abstract-content">
-            题目描述输入一个链表，按链表从尾到头的顺序返回一个ArrayList。
-方法一：利用堆栈，单个读取存入栈中，再逐个pop,实线从后往前。
-12345678910111213141516171819public ArrayList&lt;Integer&gt; printListFromTailToHead(ListNode listNode) &#123;    Stack&lt;Integer&gt; stack = new Stack&lt;&gt;();    while (listNode != null) &#123;        stack.push(listNode.va...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/22</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/30</span>
             </div>
             <!-- tags  -->
             
@@ -513,18 +481,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/22/codingNow-2-替换空格/" >
+        <a class="abstract-title" href = "/2019/08/29/codingNow-36-两个链表中的第一个公共点/" >
             
-                <span>codingNow 2 替换空格</span>
+                <span>codingNow 36 两个链表中的第一个公共点</span>
         </a>
         <div class="abstract-content">
-            题目描述请实现一个函数，把字符串中的每个空格替换成”%20”，例如“We are happy.“，则输出”We%20are%20happy”
-123456789101112131415161718192021222324252627282930313233343536public class Test04 &#123;    public static String replaceSpace(StringBuffer str) &#123;        int usedlength = str.length();        if (str == null) &#123;      ...
+            题目描述输入两个链表，找出它们的第一个公共结点。
+利用hashmap12345678910111213141516171819202122import java.util.HashMap;public class Solution &#123;    public ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) &#123;        ListNode current1 = pHead1;        ListNode current2 = pHead2;          HashMap&lt;List...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/22</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/29</span>
             </div>
             <!-- tags  -->
             
@@ -543,19 +511,18 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/codingNow-1-二维数组的查找/" >
+        <a class="abstract-title" href = "/2019/08/29/codingNow-35-数组中的逆序对/" >
             
-                <span>codingNow 1 二维数组的查找</span>
+                <span>codingNow 35 数组中的逆序对</span>
         </a>
         <div class="abstract-content">
-            题目描述：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。
-规律：首先选取数组中右上角的数字。如果该数字等于要查找的数字，查找过程结束：如果该数字大于要查找的数字，剔除这个数字所在的列：如果该数字小于要查找的数字，剔除这个数字所在的行。也就是说如果要查找的数字不在数组的右上角，则每－次都在数组的查找范围中剔除）行或者一列，这样每一步都可以缩小查找的范围，直到找到要查找的数字，或者查找范围为空。
-123456789101112131415161718192021222324...
+            题目描述在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组,求出这个数组中的逆序对的总数P。并将P对1000000007取模的结果输出。 即输出P%1000000007
+123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960public class Solution &#123;    public int InversePairs(int [] array) &#123;    ...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/29</span>
             </div>
             <!-- tags  -->
             
@@ -574,30 +541,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/LeetCode第26号问题：删除排序数组中的重复项/" >
+        <a class="abstract-title" href = "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >
             
-                <span>LeetCode 第 26 号问题：删除排序数组中的重复项</span>
+                <span>codingNow 34 第一个只出现一次的字符</span>
         </a>
         <div class="abstract-content">
-            题目来源于 LeetCode 上第 26 号问题：删除排序数组中的重复项。题目难度为 Easy，目前通过率为 48.8% 。
-题目描述给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。
-不要使用额外的数组空间，你必须在原地修改输入数组并在使用 O(1) 额外空间的条件下完成。
-示例 1:
-12345给定数组 nums = [1,1,2], 函数应该返回新的长度 2, 并且原数组 nums 的前两个元素被修改为 1, 2。 你不需要考虑数组中超出新长度后面的元素。
-
-示例 2:
-12345给定 nums = [0,0,1,1,1,2,2,3,...
+            题目描述在一个字符串(0&lt;=字符串长度&lt;=10000，全部由字母组成)中找到第一个只出现一次的字符,并返回它的位置, 如果没有则返回 -1（需要区分大小写）.
+12345678910111213141516171819202122232425import java.util.LinkedHashMap;// use linkedhashmap to keep the orderpublic class Solution &#123;    public int FirstNotRepeatingChar(String str) &#123;        LinkedHash...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/28</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -610,29 +571,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/LeetCode第21号问题：合并两个有序链表/" >
+        <a class="abstract-title" href = "/2019/08/28/codingNow-33-寻找第n个丑数/" >
             
-                <span>LeetCode 第 21 号问题：合并两个有序链表</span>
+                <span>codingNow 33 寻找第n个丑数</span>
         </a>
         <div class="abstract-content">
-            题目来源于 LeetCode 上第 21 号问题：合并两个有序链表。题目难度为 Easy，目前通过率为 45.8% 。
-题目描述将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
-示例：
-12输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4
-
-题目解析一般方案1.1 解题思想
-（1）对空链表存在的情况进行处理，假如 pHead1 为空则返回 pHead2 ，pHead2 为空则返回 pHead1。（两个都为空此情况在pHead1为空已经被拦截）（2）在两个链表无空...
+            题目描述把只包含质因子2、3和5的数称作丑数（Ugly Number）。例如6、8都是丑数，但14不是，因为它包含质因子7。 习惯上我们把1当做是第一个丑数。求按从小到大的顺序的第N个丑数。
+1234567891011121314151617181920212223242526272829import java.util.ArrayList;public class Solution &#123;    public int GetUglyNumber_Solution(int n)    &#123;        if(n&lt;=0)return 0;        ArrayLi...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/28</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -645,40 +601,54 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/21/LeetCode第20号问题：有效的括号/" >
+        <a class="abstract-title" href = "/2019/08/28/codingNow-32-把数组排成最小的数/" >
             
-                <span>LeetCode 第 20 号问题：有效的括号</span>
+                <span>codingNow 32 把数组排成最小的数</span>
         </a>
         <div class="abstract-content">
-            题目描述给定一个只包括 &#39;(&#39;，&#39;)&#39;，&#39;{&#39;，&#39;}&#39;，&#39;[&#39;，&#39;]&#39; 的字符串，判断字符串是否有效。
-有效字符串需满足：
-
-左括号必须用相同类型的右括号闭合。
-左括号必须以正确的顺序闭合。
-
-注意空字符串可被认为是有效字符串。
-示例 1:
-12输入: &quot;()&quot;输出: true
-
-示例 2:
-12输入: &quot;()[]&#123;&#125;&quot;输出: true
-
-示例 3:
-12输入: &quot;(]&quot;输出: false
-
-示例 4:
-12输入:...
+            题目描述输入一个正整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。例如输入数组{3，32，321}，则打印出这三个数字能排成的最小数字为321323。
+1234567891011121314151617181920212223242526272829import java.util.ArrayList;public class Solution &#123;    public String PrintMinNumber(int [] numbers) &#123;        for (int i = 0; i &lt; numbers.length...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/21</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/28</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/28/codingNow-31-整数中1出现的次数/" >
+            
+                <span>codingNow 31 整数中1出现的次数</span>
+        </a>
+        <div class="abstract-content">
+            题目描述求出113的整数中1出现的次数,并算出1001300的整数中1出现的次数？为此他特别数了一下1~13中包含1的数字有1、10、11、12、13因此共出现6次,但是对于后面问题他就没辙了。ACMer希望你们帮帮他,并把问题更加普遍化,可以很快的求出任意非负整数区间中1出现的次数（从1 到 n 中1出现的次数）。
+暴力法123456789101112131415public class Solution &#123;    public int NumberOf1Between1AndN_Solution(int n) &#123;        int count=0;      ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/28</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
     
 </div>
             
@@ -688,7 +658,7 @@
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/page/6/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="page-number" href="/archives/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/archives/page/8/">8</a><a class="extend next" rel="next" href="/archives/page/8/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/page/6/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="page-number" href="/archives/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/archives/page/8/">8</a><a class="page-number" href="/archives/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/11/">11</a><a class="extend next" rel="next" href="/archives/page/8/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -2106,9 +2076,558 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 76
+        Total : 103
         </div>
         <!-- search  -->
         
@@ -2125,6 +2644,176 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/27</span><a class="archive-post-title" href= "/2019/09/27/2-工厂设计模式/" >2 工厂设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/27</span><a class="archive-post-title" href= "/2019/09/27/1-单例设计模式/" >1 单例设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/26</span><a class="archive-post-title" href= "/2019/09/26/依赖关系传递的三种方式/" >依赖关系传递的三种方式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/19</span><a class="archive-post-title" href= "/2019/09/19/leetcode-36-有效的数独/" >leetcode 36. 有效的数独</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/18</span><a class="archive-post-title" href= "/2019/09/18/leetcode-34-在排序数组中查找元素的第一个和最后一个位置/" >leetcode 34. 在排序数组中查找元素的第一个和最后一个位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/2019/09/17/leetcode-33-搜索旋转排序数组/" >leetcode 33. 搜索旋转排序数组</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/2019/09/17/leetcode-29-两数相除/" >leetcode 29. 两数相除</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/17</span><a class="archive-post-title" href= "/2019/09/17/leetcode-24-两两交换链表中的节点/" >leetcode 24. 两两交换链表中的节点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/leetcode-22-括号生成/" >leetcode 22. 括号生成</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/leetcode-19-删除链表的倒数第N个节点/" >leetcode 19. 删除链表的倒数第N个节点</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/16</span><a class="archive-post-title" href= "/2019/09/16/leetcode-18-四数之和/" >leetcode 18. 四数之和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/leetcode-17-电话号码的字母组合/" >leetcode 17. 电话号码的字母组合</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/leetcode-16-最接近的三数之和/" >leetcode 16. 最接近的三数之和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/12</span><a class="archive-post-title" href= "/2019/09/12/leetcode-15-三数之和/" >leetcode 15. 三数之和</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-12-整数转罗马数字/" >leetcode 12. 整数转罗马数字</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-6-Z-字形变换/" >leetcode 6. Z 字形变换</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-5-最长回文子串/" >leetcode 5. 最长回文子串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-3-无重复字符的最长子串/" >leetcode 3. 无重复字符的最长子串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-2-两数相加/" >leetcode 2. 两数相加</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/10</span><a class="archive-post-title" href= "/2019/09/10/leetcode-38-报数/" >leetcode 38. 报数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-26-删除排序数组中的重复项/" >leetcode 26. 删除排序数组中的重复项</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-7-整数反转/" >leetcode 7. 整数反转</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-1-两数之和/" >leetcode 1. 两数之和</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -2208,12 +2897,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
         </li>
     
     
@@ -2238,12 +2927,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
         </li>
     
     
@@ -2253,7 +2942,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
@@ -2288,12 +2977,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
         </li>
     
     
@@ -2348,12 +3037,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -2403,12 +3092,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
@@ -2463,27 +3152,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第26号问题：删除排序数组中的重复项/" >LeetCode 第 26 号问题：删除排序数组中的重复项</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第21号问题：合并两个有序链表/" >LeetCode 第 21 号问题：合并两个有序链表</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第20号问题：有效的括号/" >LeetCode 第 20 号问题：有效的括号</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/浅析用枚举实现单例模式/" >浅析用枚举实现单例模式</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">08/21</span><a class="archive-post-title" href= "/2019/08/21/LeetCode第9号问题：回文数/" >LeetCode 第 9 号问题：回文数</a>
         </li>
     
     
@@ -2491,29 +3160,18 @@
             <span class="archive-post-date">08/18</span><a class="archive-post-title" href= "/2019/08/18/控制反转（IoC）和依赖注入（DI）的区别/" >控制反转（IoC）和依赖注入（DI）的区别</a>
         </li>
     
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/28</span><a class="archive-post-title" href= "/2019/07/28/LeetCode第3号问题：无重复字符的最长子串/" >LeetCode 第 3 号问题：无重复字符的最长子串</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/28</span><a class="archive-post-title" href= "/2019/07/28/LeetCode第2号问题：两数相加/" >LeetCode 第 2 号问题：两数相加</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">07/27</span><a class="archive-post-title" href= "/2019/07/27/LeetCode第1号问题：两数之和/" >LeetCode 第 1 号问题：两数之和</a>
-        </li>
-    
     </div>
   </div>
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="leetcode"><span class="iconfont-archer">&#xe606;</span>leetcode</span>
+        <span class="sidebar-tag-name" data-tags="设计模式学习笔记"><span class="iconfont-archer">&#xe606;</span>设计模式学习笔记</span>
     
         <span class="sidebar-tag-name" data-tags="coding-interviews"><span class="iconfont-archer">&#xe606;</span>coding-interviews</span>
+    
+        <span class="sidebar-tag-name" data-tags="leetcode"><span class="iconfont-archer">&#xe606;</span>leetcode</span>
+    
+        <span class="sidebar-tag-name" data-tags="Spring源码阅读"><span class="iconfont-archer">&#xe606;</span>Spring源码阅读</span>
     
         <span class="sidebar-tag-name" data-tags="浅析java"><span class="iconfont-archer">&#xe606;</span>浅析java</span>
     
