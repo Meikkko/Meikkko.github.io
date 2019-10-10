@@ -287,7 +287,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>字数统计: <span class="post-count word-count">714</span>阅读时长: <span class="post-count reading-time">3 min</span></span>
+                        <span>字数统计: <span class="post-count word-count">968</span>阅读时长: <span class="post-count reading-time">5 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -448,7 +448,11 @@ height:50vh;
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class PizzaStore &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        new OrderPizza(new BJFactory());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>工厂方法就是让所有工厂实现了一个抽象方法（通过继承一个抽象类），这样所有的工厂都会生产汽车了，但是具体生产什么汽车还得自己去找对应的厂子。<br>抽象工厂模式就是，抽象出一个工厂接口，所有工厂实现这个接口，实现其中的制造方法，在使用的时候，任意抽象类工厂的实现类都可以被应用到这个位置，不用自己选择。</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h1 id="在JDK源码中的应用"><a href="#在JDK源码中的应用" class="headerlink" title="在JDK源码中的应用"></a>在JDK源码中的应用</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public class Client &#123;</span><br><span class="line">    public static void main(String[] args) throws CloneNotSupportedException &#123;</span><br><span class="line">        Calendar instance = Calendar.getInstance();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">public static Calendar getInstance()</span><br><span class="line">&#123;</span><br><span class="line">    Locale aLocale = Locale.getDefault(Locale.Category.FORMAT);</span><br><span class="line">    return createCalendar(defaultTimeZone(aLocale), aLocale);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">private static Calendar createCalendar(TimeZone zone,</span><br><span class="line">                                       Locale aLocale)</span><br><span class="line">&#123;</span><br><span class="line">    CalendarProvider provider =</span><br><span class="line">        LocaleProviderAdapter.getAdapter(CalendarProvider.class, aLocale)</span><br><span class="line">                             .getCalendarProvider();</span><br><span class="line">    if (provider != null) &#123;</span><br><span class="line">        try &#123;</span><br><span class="line">            return provider.getInstance(zone, aLocale);</span><br><span class="line">        &#125; catch (IllegalArgumentException iae) &#123;</span><br><span class="line">            // fall back to the default instantiation</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    Calendar cal = null;</span><br><span class="line"></span><br><span class="line">    if (aLocale.hasExtensions()) &#123;</span><br><span class="line">        String caltype = aLocale.getUnicodeLocaleType(&quot;ca&quot;);</span><br><span class="line">        if (caltype != null) &#123;</span><br><span class="line">//简单工厂模式</span><br><span class="line">            switch (caltype) &#123;</span><br><span class="line">            case &quot;buddhist&quot;:</span><br><span class="line">            cal = new BuddhistCalendar(zone, aLocale);</span><br><span class="line">                break;</span><br><span class="line">            case &quot;japanese&quot;:</span><br><span class="line">                cal = new JapaneseImperialCalendar(zone, aLocale);</span><br><span class="line">                break;</span><br><span class="line">            case &quot;gregory&quot;:</span><br><span class="line">                cal = new GregorianCalendar(zone, aLocale);</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if (cal == null) &#123;</span><br><span class="line">        // If no known calendar type is explicitly specified,</span><br><span class="line">        // perform the traditional way to create a Calendar:</span><br><span class="line">        // create a BuddhistCalendar for th_TH locale,</span><br><span class="line">        // a JapaneseImperialCalendar for ja_JP_JP locale, or</span><br><span class="line">        // a GregorianCalendar for any other locales.</span><br><span class="line">        // NOTE: The language, country and variant strings are interned.</span><br><span class="line">        if (aLocale.getLanguage() == &quot;th&quot; &amp;&amp; aLocale.getCountry() == &quot;TH&quot;) &#123;</span><br><span class="line">            cal = new BuddhistCalendar(zone, aLocale);</span><br><span class="line">        &#125; else if (aLocale.getVariant() == &quot;JP&quot; &amp;&amp; aLocale.getLanguage() == &quot;ja&quot;</span><br><span class="line">                   &amp;&amp; aLocale.getCountry() == &quot;JP&quot;) &#123;</span><br><span class="line">            cal = new JapaneseImperialCalendar(zone, aLocale);</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            cal = new GregorianCalendar(zone, aLocale);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return cal;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
     </article>
     <!-- license  -->
     
@@ -456,13 +460,18 @@ height:50vh;
             <p>原文作者：<a href="http://yoursite.com">Meiko</a>
             <p>原文链接：<a href="http://yoursite.com/2019/09/27/2-工厂设计模式/">http://yoursite.com/2019/09/27/2-工厂设计模式/</a>
             <p>发表日期：<a href="http://yoursite.com/2019/09/27/2-工厂设计模式/">September 27th 2019, 6:18:26 pm</a>
-            <p>更新日期：<a href="http://yoursite.com/2019/09/27/2-工厂设计模式/">September 27th 2019, 7:44:01 pm</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/09/27/2-工厂设计模式/">October 9th 2019, 3:57:54 pm</a>
             <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
         </div>
     
     <!-- paginator  -->
     <ul class="post-paginator">
         <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2019/10/09/3-原型模式/" title= "3 原型模式">
+                    <div class="nextTitle">3 原型模式</div>
+                </a>
             
         </li>
         <li class="previous">
@@ -596,7 +605,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单工厂模式（静态工厂）"><span class="toc-number">2.</span> <span class="toc-text">简单工厂模式（静态工厂）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工厂方法模式"><span class="toc-number">3.</span> <span class="toc-text">工厂方法模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象方法模式"><span class="toc-number">4.</span> <span class="toc-text">抽象方法模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#个人总结"><span class="toc-number">5.</span> <span class="toc-text">个人总结</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#准备工作"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#简单工厂模式（静态工厂）"><span class="toc-number">2.</span> <span class="toc-text">简单工厂模式（静态工厂）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工厂方法模式"><span class="toc-number">3.</span> <span class="toc-text">工厂方法模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象方法模式"><span class="toc-number">4.</span> <span class="toc-text">抽象方法模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#个人总结"><span class="toc-number">5.</span> <span class="toc-text">个人总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用"><span class="toc-number">6.</span> <span class="toc-text">应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#在JDK源码中的应用"><span class="toc-number"></span> <span class="toc-text">在JDK源码中的应用</span></a>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -2467,26 +2476,9 @@ top:50vh;
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 103
+        Total : 104
         </div>
         <!-- search  -->
         
@@ -2503,6 +2495,11 @@ top:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型模式</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -2616,12 +2613,17 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
         </li>
     
     
@@ -2636,7 +2638,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
@@ -2651,12 +2653,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
         </li>
     
     
@@ -2681,12 +2678,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
         </li>
     
     
@@ -2731,12 +2728,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
         </li>
     
     
@@ -2776,22 +2773,17 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >codingNow 46 圆圈中最后剩下的数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -2801,7 +2793,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
         </li>
     
     
@@ -2896,12 +2893,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -2986,12 +2983,12 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/关于二叉树/" >关于二叉树</a>
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/codingNow-4-还原二叉树/" >codingNow 4 还原二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/codingNow-4-还原二叉树/" >codingNow 4 还原二叉树</a>
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/关于二叉树/" >关于二叉树</a>
         </li>
     
     
