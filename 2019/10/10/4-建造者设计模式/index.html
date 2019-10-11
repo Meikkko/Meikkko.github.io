@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Meiko&#39;s Studio</title>
+    <title>4 建造者设计模式 · Meiko&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -218,12 +218,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >Meiko&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">4 建造者设计模式</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>Meiko's Studio.</a>
 </header>
@@ -235,24 +246,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            4 建造者设计模式
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">1k</span>阅读时长: <span class="post-count reading-time">4 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/10</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -353,314 +414,64 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/04/codingNow-52-正则表达式匹配/" >
-            
-                <span>codingNow 52 正则表达式匹配</span>
-        </a>
-        <div class="abstract-content">
-            题目描述请实现一个函数用来匹配包括’.’和’‘的正则表达式。模式中的字符’.’表示任意一个字符，而’‘表示它前面的字符可以出现任意次（包含0次）。 在本题中，匹配是指字符串的所有字符匹配整个模式。例如，字符串”aaa”与模式”a.a”和”abaca”匹配，但是与”aa.a”和”ab*a”均不匹配
-12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849public class Solution &#123;    public boolean match(char[]...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-51-构建乘积数组/" >
-            
-                <span>codingNow 51 构建乘积数组</span>
-        </a>
-        <div class="abstract-content">
-            题目描述12345678910111213141516171819public class Solution &#123;    public int[] multiply(int[] A) &#123;        int length = A.length;        int[] B = new int[length];        if (A == null || length == 0) &#123;            return B;        &#125;        B[0] = 1;        for (int i = 1; i &lt; leng...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-50-数组中重复的数字/" >
-            
-                <span>codingNow 50 数组中重复的数字</span>
-        </a>
-        <div class="abstract-content">
-            题目描述在一个长度为n的数组里的所有数字都在0到n-1的范围内。 数组中某些数字是重复的，但不知道有几个数字是重复的。也不知道每个数字重复几次。请找出数组中任意一个重复的数字。 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。
-HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#123;    public boolean duplicate(int numbers[],int length,int [] duplication) &#...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-49-把字符串转换成整数/" >
-            
-                <span>codingNow 49 把字符串转换成整数</span>
-        </a>
-        <div class="abstract-content">
-            题目描述将一个字符串转换成一个整数(实现Integer.valueOf(string)的功能，但是string不符合数字要求时返回0)，要求不能使用字符串转换整数的库函数。 数值为0或者字符串不是一个合法的数值则返回0。
-12345678910111213141516171819202122232425public class Solution &#123;    public int StrToInt(String str) &#123;        if (str == null || str.trim().equals("")) &#123;            return ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-48-不用加减乘除做加法/" >
-            
-                <span>codingNow 48 不用加减乘除做加法</span>
-        </a>
-        <div class="abstract-content">
-            题目描述不用加减乘除做加法
-123456789101112131415public class Solution &#123;    public int Add(int num1,int num2) &#123;        while (num2 != 0) &#123;            //求进位            int carry = (num1&amp;num2)&lt;&lt;1;            //相加，但不包含各位进位            num1 ^= num2;            //进位参与下次相加，直到不存在进位            ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-47-求1-2-3-n/" >
-            
-                <span>codingNow 47 求1+2+3+...+n</span>
-        </a>
-        <div class="abstract-content">
-            题目描述求1+2+3+…+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
-1234567891011public class Solution &#123;    //解题思路：    //1.需利用逻辑与的短路特性实现递归终止。     //2.当n==0时，(n&gt;0)&amp;&amp;((sum+=Sum_Solution(n-1))&gt;0)只执行前面的判断，为false，然后直接返回0；    //3.当n&gt;0时，执行sum+=Sum_Solution(n-1)，实现递归计算Sum_Solu...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >
-            
-                <span>codingNow 46 圆圈中最后剩下的数</span>
-        </a>
-        <div class="abstract-content">
-            题目描述每年六一儿童节,牛客都会准备一些小礼物去看望孤儿院的小朋友,今年亦是如此。HF作为牛客的资深元老,自然也准备了一些小游戏。其中,有个游戏是这样的:首先,让小朋友们围成一个大圈。然后,他随机指定一个数m,让编号为0的小朋友开始报数。每次喊到m-1的那个小朋友要出列唱首歌,然后可以在礼品箱中任意的挑选礼物,并且不再回到圈中,从他的下一个小朋友开始,继续0…m-1报数….这样下去….直到剩下最后一个小朋友,可以不用表演,并且拿到牛客名贵的“名侦探柯南”典藏版(名额有限哦!!^_^)。请你试着想下,哪个小朋友会得到这份礼品呢？(注：小朋友的编号是从0到n-1)如果没有小朋友，请返回-1
-...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-45-扑克牌顺子/" >
-            
-                <span>codingNow 45 扑克牌顺子</span>
-        </a>
-        <div class="abstract-content">
-            题目描述LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)…他随机从中抽出了5张牌,想测测自己的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子…..LL不高兴了,他想了想,决定大\小 王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就可以变成“1,2,3,4,5”(大小王分别看作2和4),“So Lucky!”。LL决定去买体育彩票啦。 现在,要求你使用这幅牌模拟上面的过程,然后告诉我们LL的运气如何， 如果牌能组...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-44-反转单词顺序/" >
-            
-                <span>codingNow 44 反转单词顺序</span>
-        </a>
-        <div class="abstract-content">
-            题目描述“I am a student.”—&gt;“student. a am I”
-12345678910111213141516171819202122public class Solution &#123;    public String ReverseSentence(String str) &#123;        if ("".equals(str.trim())) &#123;            return str;        &#125;        String reversed = reverse(str);        String[] s = ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-43-左旋转字符串/" >
-            
-                <span>codingNow 43 左旋转字符串</span>
-        </a>
-        <div class="abstract-content">
-            题目描述汇编语言中有一种移位指令叫做循环左移（ROL），现在有个简单的任务，就是用字符串模拟这个指令的运算结果。对于一个给定的字符序列S，请你把其循环左移K位后的序列输出。例如，字符序列S=”abcXYZdef”,要求输出循环左移3位后的结果，即“XYZdefabc”。是不是很简单？OK，搞定它！
-正派做法1234//先将前n个字符，剩余字符分成两个部分//每个部分分别反转如 str=“abcdef”，n=2，str1=“ab”，str2=“cdef”//转化为str1=“ba”，str2=“fedc”，合并str=“bafedc”//整体反转，str=“cdefab”，完成
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="基本介绍"><a href="#基本介绍" class="headerlink" title="基本介绍"></a>基本介绍</h1><p>1.适用场景：<br>1)隔离复杂对象的创建和使用，相同的方法，不同执行顺序，产生不同事件结果<br>2)多个部件都可以装配到一个对象中，但产生的运行结果不相同<br>3)产品类非常复杂或者产品类因为调用顺序不同而产生不同作用<br>4)初始化一个对象时，参数过多，或者很多参数具有默认值<br>5)Builder模式不适合创建差异性很大的产品类<br>6)产品内部变化复杂，会导致需要定义很多具体建造者类实现变化，增加项目中类的数量，增加系统的理解难度和运行成本<br>7)需要生成的产品对象有复杂的内部结构，这些产品对象具备共性；</p>
+<p>2.建造者模式的四个角色<br>1)Product （产品角色一个具体的产品对象 。<br>2)Builder （抽象建造者 创建一个Product对象的各个部件指定的接口抽象类 。<br>3)ConcreteBuilder （具体建造者实现接口，构建和装配各个部件 。<br>4)Director （指挥者 构建一个使用Builder接口的对象。它主要是用于创建一个复杂的对象。它主要有两个作用，一是：隔离了客户与对象的生产过程，二是：负责控制产品对象的生产过程。<br><img src="https://upload-images.jianshu.io/upload_images/18958678-732af724ba70d047.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt></p>
+<h2 id="具体对象"><a href="#具体对象" class="headerlink" title="具体对象"></a>具体对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">public class House &#123;</span><br><span class="line">    private String baise;</span><br><span class="line">    private String wall;</span><br><span class="line">    private String roofed;</span><br><span class="line">	//getter和setter</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-java...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
+<h2 id="抽象建造者"><a href="#抽象建造者" class="headerlink" title="抽象建造者"></a>抽象建造者</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 抽象的建造者</span><br><span class="line"> */</span><br><span class="line">public abstract class HouseBuilder &#123;</span><br><span class="line">    protected House house = new House();</span><br><span class="line"></span><br><span class="line">    //建造的抽象流程</span><br><span class="line">    public abstract void buildBasic();</span><br><span class="line">    public abstract void buildWalls();</span><br><span class="line">    public abstract void roofed();</span><br><span class="line"></span><br><span class="line">    //造好房子，将房子返回</span><br><span class="line">    public House buildHouse()&#123;</span><br><span class="line">        return house;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="具体建造者"><a href="#具体建造者" class="headerlink" title="具体建造者"></a>具体建造者</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">public class CommonHouse extends HouseBuilder &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void buildBasic() &#123;</span><br><span class="line">        System.out.println(&quot;普通房子打地基5米&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void buildWalls() &#123;</span><br><span class="line">        System.out.println(&quot;普通房子建墙四堵&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void roofed() &#123;</span><br><span class="line">        System.out.println(&quot;普通房子造天花板&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="指挥者"><a href="#指挥者" class="headerlink" title="指挥者"></a>指挥者</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * 指挥者</span><br><span class="line"> */</span><br><span class="line">public class HouseDirector &#123;</span><br><span class="line"></span><br><span class="line">    HouseBuilder houseBuilder = null;</span><br><span class="line"></span><br><span class="line">    //构造器传入houseBuilder</span><br><span class="line">    public HouseDirector(HouseBuilder houseBuilder) &#123;</span><br><span class="line">        this.houseBuilder = houseBuilder;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //通过setter传入houseBuilder</span><br><span class="line">    public void setHouseBuilder(HouseBuilder houseBuilder) &#123;</span><br><span class="line">        this.houseBuilder = houseBuilder;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    //指挥者指挥建造的房子的流程</span><br><span class="line">    public House constructHouse()&#123;</span><br><span class="line">        houseBuilder.buildBasic();</span><br><span class="line">        houseBuilder.buildWalls();</span><br><span class="line">        houseBuilder.roofed();</span><br><span class="line">        return houseBuilder.buildHouse();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">public class Client &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        //盖普通房子</span><br><span class="line">        CommonHouse commonHouse = new CommonHouse();</span><br><span class="line">        //准备指挥者</span><br><span class="line">        HouseDirector houseDirector = new HouseDirector(commonHouse);</span><br><span class="line">        //完成</span><br><span class="line">        House house = houseDirector.constructHouse();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h1><p>建造者设计模式在JDK中java.lang.StringBuilder中的应用</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Client.java</span><br><span class="line">StringBuilder stringBuilder = new StringBuilder(&quot;sss&quot;);</span><br><span class="line"></span><br><span class="line">StringBuilder.java</span><br><span class="line">public final class StringBuilder</span><br><span class="line">	extends AbstractStringBuilder</span><br><span class="line">    implements java.io.Serializable, CharSequence</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">AbstractStringBuilder.java</span><br><span class="line">abstract class AbstractStringBuilder implements Appendable, CharSequence &#123;</span><br></pre></td></tr></table></figure>
+
+<p>1.Appendable接口定义了多个append抽象方法，所以Appendable为抽象建造者，定义了抽象方法；<br>2.AbstractStringBuilder实现了Appendable方法，所以AbstractStringBuilder是建造者，只是不能实例化<br>3.StringBuilder既是指挥者，又是具体的建造者，比如建造方法的实现是由 AbstractStringBuilder 完成 , 而 StringBuilder 继承了<br>AbstractStringBuilder。<br>4.建造者模式与抽象工厂模式的比较:<br>1)与抽象工厂模式相比，建造者模式返回一个组装好的完整产品，而抽象工厂模式返回一系列相关的产品，这些产品位于不同的产品等级结构，构成了一个产品族 。<br>2)在抽象工厂模式中，客户端实例化工厂类，然后调用工厂方法获取所需产品对象，而在建造者模式中，客户端可以不直接调用建造者的相关方法，而是通过指挥者类来指导如何生成对象，包括对象的组装过程和建造步骤，它侧重于一步步构造一个复杂对象，返回一个完整的对象 。<br>3)如果将抽象工厂模式看成汽车配件生产工厂，生产一个产品族的产品，那么建造者模式就是一个汽车组装工厂，通过对部件的组装可以返回一辆完整的汽车</p>
+
     </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="http://yoursite.com">Meiko</a>
+            <p>原文链接：<a href="http://yoursite.com/2019/10/10/4-建造者设计模式/">http://yoursite.com/2019/10/10/4-建造者设计模式/</a>
+            <p>发表日期：<a href="http://yoursite.com/2019/10/10/4-建造者设计模式/">十月 10日 2019, 3:21:12 下午</a>
+            <p>更新日期：<a href="http://yoursite.com/2019/10/10/4-建造者设计模式/">October 10th 2019, 5:27:49 pm</a>
+            <p>版权声明：本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/09/3-原型模式/" title= "3 原型模式">
+                    <div class="prevTitle">3 原型模式</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/page/5/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/4/">4</a><a class="page-number" href="/archives/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/archives/page/7/">7</a><a class="page-number" href="/archives/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/11/">11</a><a class="extend next" rel="next" href="/archives/page/7/">NEXT &#62;</a>
-    </nav>
     
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -753,6 +564,24 @@ java...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#基本介绍"><span class="toc-number">1.</span> <span class="toc-text">基本介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#具体对象"><span class="toc-number">1.1.</span> <span class="toc-text">具体对象</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#抽象建造者"><span class="toc-number">1.2.</span> <span class="toc-text">抽象建造者</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#具体建造者"><span class="toc-number">1.3.</span> <span class="toc-text">具体建造者</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#指挥者"><span class="toc-number">1.4.</span> <span class="toc-text">指挥者</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#客户端"><span class="toc-number">1.5.</span> <span class="toc-text">客户端</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#应用"><span class="toc-number">2.</span> <span class="toc-text">应用</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -3391,6 +3220,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
