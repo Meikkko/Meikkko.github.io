@@ -374,6 +374,36 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/08/26/codingNow-24-二叉树中和为某一值的路径/" >
+            
+                <span>codingNow 24 二叉树中和为某一值的路径</span>
+        </a>
+        <div class="abstract-content">
+            题目描述输入一颗二叉树的根节点和一个整数，打印出二叉树中结点值的和为输入整数的所有路径。路径定义为从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。(注意: 在返回值的list中，数组长度大的数组靠前)
+12345678910111213141516171819202122public class Solution &#123;    private ArrayList&lt;ArrayList&lt;Integer&gt;&gt; listAll = new ArrayList&lt;ArrayList&lt;Integer&gt;&gt;();    private Arra...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/08/26/codingNow-23-二叉搜索树的后序遍历序列/" >
             
                 <span>codingNow 23 二叉搜索树的后序遍历序列</span>
@@ -623,36 +653,6 @@ height:50vh;
         <div class="abstract-content">
             题目描述输入一个链表，反转链表后，输出新链表的表头。
 123456789101112131415public class Solution &#123;    public ListNode ReverseList(ListNode head) &#123;        ListNode next = null;        ListNode pre = null;        while (head != null) &#123;            next = head.next;            head.next = pre;            pre = h...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/08/25</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/08/25/codingNow-14-输出链表中倒数第k个元素/" >
-            
-                <span>codingNow 14 输出链表中倒数第k个元素</span>
-        </a>
-        <div class="abstract-content">
-            题目描述输入一个链表，输出该链表中倒数第k个结点。
-1.双指针（两者相差k-1）123456789101112131415161718192021222324/*public class ListNode &#123;    int val;    ListNode next = null;    ListNode(int val) &#123;        this.val = val;    &#125;&#125;*/public class Solution &#123;    public ListNode FindKthToTail(ListNode head,int k)...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -2786,9 +2786,22 @@ height:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 106
+        Total : 107
         </div>
         <!-- search  -->
         
@@ -2805,6 +2818,11 @@ height:50vh;
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/6-桥接模式/" >6 桥接模式</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -2933,27 +2951,7 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
         </li>
     
     
@@ -2963,17 +2961,37 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
         </li>
     
     
@@ -3073,12 +3091,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
         </li>
     
     
@@ -3103,7 +3121,7 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -3113,7 +3131,7 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
@@ -3213,12 +3231,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -3268,12 +3286,12 @@ height:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
