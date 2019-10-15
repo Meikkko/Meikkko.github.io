@@ -361,6 +361,66 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/04/codingNow-56-删除链表中重复的结点/" >
+            
+                <span>codingNow 56 删除链表中重复的结点</span>
+        </a>
+        <div class="abstract-content">
+            题目描述在一个排序的链表中，存在重复的结点，请删除该链表中重复的结点，重复的结点不保留，返回链表头指针。 例如，链表1-&gt;2-&gt;3-&gt;3-&gt;4-&gt;4-&gt;5 处理后为 1-&gt;2-&gt;5
+12345678910111213141516171819202122232425public class Solution &#123;    public ListNode deleteDuplication(ListNode pHead) &#123;        if (pHead==null || pHead.next==null)&#123;ret...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/04/codingNow-55-链表中环的入口结点/" >
+            
+                <span>codingNow 55 链表中环的入口结点</span>
+        </a>
+        <div class="abstract-content">
+            题目描述给一个链表，若其中包含环，请找出该链表的环的入口结点，否则，输出null。
+set法123456789101112131415161718import java.util.HashSet;public class Solution &#123;    public ListNode EntryNodeOfLoop(ListNode pHead) &#123;        if (pHead == null) &#123;            return null;        &#125;        HashSet&lt;ListNode&gt; set = new ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/04</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >
             
                 <span>codingNow 54 字符流中第一个不重复的字符</span>
@@ -577,65 +637,6 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
         <div class="abstract-content">
             题目描述求1+2+3+…+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
 1234567891011public class Solution &#123;    //解题思路：    //1.需利用逻辑与的短路特性实现递归终止。     //2.当n==0时，(n&gt;0)&amp;&amp;((sum+=Sum_Solution(n-1))&gt;0)只执行前面的判断，为false，然后直接返回0；    //3.当n&gt;0时，执行sum+=Sum_Solution(n-1)，实现递归计算Sum_Solu...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >
-            
-                <span>codingNow 46 圆圈中最后剩下的数</span>
-        </a>
-        <div class="abstract-content">
-            题目描述每年六一儿童节,牛客都会准备一些小礼物去看望孤儿院的小朋友,今年亦是如此。HF作为牛客的资深元老,自然也准备了一些小游戏。其中,有个游戏是这样的:首先,让小朋友们围成一个大圈。然后,他随机指定一个数m,让编号为0的小朋友开始报数。每次喊到m-1的那个小朋友要出列唱首歌,然后可以在礼品箱中任意的挑选礼物,并且不再回到圈中,从他的下一个小朋友开始,继续0…m-1报数….这样下去….直到剩下最后一个小朋友,可以不用表演,并且拿到牛客名贵的“名侦探柯南”典藏版(名额有限哦!!^_^)。请你试着想下,哪个小朋友会得到这份礼品呢？(注：小朋友的编号是从0到n-1)如果没有小朋友，请返回-1
-...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/03</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/03/codingNow-45-扑克牌顺子/" >
-            
-                <span>codingNow 45 扑克牌顺子</span>
-        </a>
-        <div class="abstract-content">
-            题目描述LL今天心情特别好,因为他去买了一副扑克牌,发现里面居然有2个大王,2个小王(一副牌原本是54张^_^)…他随机从中抽出了5张牌,想测测自己的手气,看看能不能抽到顺子,如果抽到的话,他决定去买体育彩票,嘿嘿！！“红心A,黑桃3,小王,大王,方片5”,“Oh My God!”不是顺子…..LL不高兴了,他想了想,决定大\小 王可以看成任何数字,并且A看作1,J为11,Q为12,K为13。上面的5张牌就可以变成“1,2,3,4,5”(大小王分别看作2和4),“So Lucky!”。LL决定去买体育彩票啦。 现在,要求你使用这幅牌模拟上面的过程,然后告诉我们LL的运气如何， 如果牌能组...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -2623,63 +2624,9 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 107
+        Total : 109
         </div>
         <!-- search  -->
         
@@ -2699,7 +2646,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/6-桥接模式/" >6 桥接模式</a>
+            <span class="archive-post-date">10/14</span><a class="archive-post-title" href= "/2019/10/14/7-装饰者设计模式/" >7 装饰者设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/6-桥接设计模式/" >6 桥接设计模式</a>
         </li>
     
     
@@ -2714,7 +2666,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
         </li>
     
     
@@ -2794,12 +2751,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
         </li>
     
     
@@ -2844,22 +2801,17 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
         </li>
     
     
@@ -2874,12 +2826,17 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-7-整数反转/" >leetcode 7. 整数反转</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
         </li>
     
     
@@ -2894,12 +2851,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
         </li>
     
     
@@ -2989,17 +2946,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >codingNow 46 圆圈中最后剩下的数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
         </li>
     
     
@@ -3015,6 +2967,11 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -3109,12 +3066,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
@@ -3164,12 +3121,12 @@ HASHMAP12345678910111213141516import java.util.HashMap;public class Solution &#1
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     

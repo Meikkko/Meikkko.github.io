@@ -361,9 +361,41 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/13/6-桥接模式/" >
+        <a class="abstract-title" href = "/2019/10/14/7-装饰者设计模式/" >
             
-                <span>6 桥接模式</span>
+                <span>7 装饰者设计模式</span>
+        </a>
+        <div class="abstract-content">
+            装饰者模式介绍装饰者模式就像打包一个快递主体比如：陶瓷、衣服 (Component) // 被装饰者包装 ：比如：报纸填充、塑料泡沫、纸板、木板 (2)Component主体：比如类似前面的 Drink
+3)ConcreteComponent 和 DecoratorConcreteComponent ：具体的主体比如前面的各个单品咖啡Decorator: 装饰者，比如各调料
+4)在如图的 Component 与 ConcreteComponent 之间 ，如果ConcreteComponent 类很多 还可以设计一个缓冲层，将共有的部分提取出来，抽象层一个类 。
+123456789101...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/14</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/13/6-桥接设计模式/" >
+            
+                <span>6 桥接设计模式</span>
         </a>
         <div class="abstract-content">
             桥接模式 Bridge 基本介绍基本介绍1)桥接模式 (Bridge模式是指 ：将实现与抽象放在两个不同的类层次中，使两个层次可以独立改变。2)是一种结构型设计模式3)Bridge 模式基于类的最小设计原则 ，通过使用封装、聚合及继承等行为让不同的类承担不同的职责。它的主要特点是把抽象 (与行为实现分离开来，从而可以保持各部分的独立性以及应对他们的功能扩展
@@ -453,9 +485,39 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/09/3-原型模式/" >
+        <a class="abstract-title" href = "/2019/10/09/3-原型设计模式/" >
             
                 <span>3 原型模式</span>
+        </a>
+        <div class="abstract-content">
+            基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
+12345678910111213141516public class Sheep implements Clo...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/09</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/09/3-原型模式/" >
+            
+                <span>3 原型设计模式</span>
         </a>
         <div class="abstract-content">
             基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
@@ -2501,63 +2563,9 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 107
+        Total : 109
         </div>
         <!-- search  -->
         
@@ -2577,7 +2585,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/6-桥接模式/" >6 桥接模式</a>
+            <span class="archive-post-date">10/14</span><a class="archive-post-title" href= "/2019/10/14/7-装饰者设计模式/" >7 装饰者设计模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/13</span><a class="archive-post-title" href= "/2019/10/13/6-桥接设计模式/" >6 桥接设计模式</a>
         </li>
     
     
@@ -2592,7 +2605,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
         </li>
     
     
@@ -2672,12 +2690,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
         </li>
     
     
@@ -2722,22 +2740,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
         </li>
     
     
@@ -2752,12 +2765,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-7-整数反转/" >leetcode 7. 整数反转</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
         </li>
     
     
@@ -2772,12 +2790,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
         </li>
     
     
@@ -2867,17 +2885,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >codingNow 46 圆圈中最后剩下的数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
         </li>
     
     
@@ -2893,6 +2906,11 @@
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -2987,12 +3005,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
@@ -3042,12 +3060,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
