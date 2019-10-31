@@ -367,8 +367,8 @@
         </a>
         <div class="abstract-content">
             41、a.hashCode() 有什么用？与 a.equals(b) 有什么关系？   hashCode() 方法对应对象整型的 hash 值。它常用于基于 hash 的集合类，如 Hashtable、HashMap、LinkedHashMap等等。它与 equals() 方法关系特别紧密。根据 Java 规范，两个使用 equal() 方法来判断相等的对象，必须具有相同的 hash code。
-42、字节流与字符流的区别
-   要把一段二进制数据数据逐一输出到某个设备中，或者从某个设备中逐一读取一段二进制数据，不管输入输出设备是什么，我们要用统一的方式来完成这些操作，用一种抽象的方式进...
+42、字节流与字符流的区别、   实际上字节流在操作时本身不会用到缓冲区（内存），是文件本身直接操作的，而字符流在操作时使用了缓冲区，通过缓冲区再操作文件
+   要把一段二进制数据数据逐一输出到...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -562,9 +562,9 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/09/3-原型设计模式/" >
+        <a class="abstract-title" href = "/2019/10/09/3-原型模式/" >
             
-                <span>3 原型模式</span>
+                <span>3 原型设计模式</span>
         </a>
         <div class="abstract-content">
             基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
@@ -592,9 +592,9 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/09/3-原型模式/" >
+        <a class="abstract-title" href = "/2019/10/09/3-原型设计模式/" >
             
-                <span>3 原型设计模式</span>
+                <span>3 原型模式</span>
         </a>
         <div class="abstract-content">
             基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
@@ -2763,12 +2763,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
         Total : 112
@@ -2826,12 +2820,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
         </li>
     
     
@@ -2946,17 +2940,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
         </li>
     
     
@@ -2971,12 +2965,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
@@ -2991,12 +2985,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-7-整数反转/" >leetcode 7. 整数反转</a>
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-7-整数反转/" >leetcode 7. 整数反转</a>
         </li>
     
     
@@ -3116,7 +3110,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
@@ -3131,7 +3125,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -3166,12 +3160,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
         </li>
     
     
@@ -3226,12 +3220,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
@@ -3316,12 +3310,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/关于二叉树/" >关于二叉树</a>
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/codingNow-4-还原二叉树/" >codingNow 4 还原二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/codingNow-4-还原二叉树/" >codingNow 4 还原二叉树</a>
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/关于二叉树/" >关于二叉树</a>
         </li>
     
     
@@ -3356,9 +3350,9 @@
     
         <span class="sidebar-tag-name" data-tags="设计模式学习笔记"><span class="iconfont-archer">&#xe606;</span>设计模式学习笔记</span>
     
-        <span class="sidebar-tag-name" data-tags="Tips"><span class="iconfont-archer">&#xe606;</span>Tips</span>
-    
         <span class="sidebar-tag-name" data-tags="coding-interviews"><span class="iconfont-archer">&#xe606;</span>coding-interviews</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tips"><span class="iconfont-archer">&#xe606;</span>Tips</span>
     
         <span class="sidebar-tag-name" data-tags="leetcode"><span class="iconfont-archer">&#xe606;</span>leetcode</span>
     
