@@ -361,6 +361,98 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/27/1-单例设计模式/" >
+            
+                <span>1 单例设计模式</span>
+        </a>
+        <div class="abstract-content">
+            单例设计模式1.饿汉式（静态常量）12345678910111213141516public class SingletonTest &#123;    public static void main(String[] args) &#123;        Singleton instance = Singleton.getInstance();        Singleton instance1 = Singleton.getInstance();        System.out.println(instance==instance1);    &#125;    static...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/26/依赖关系传递的三种方式/" >
+            
+                <span>依赖关系传递的三种方式</span>
+        </a>
+        <div class="abstract-content">
+            1234567891011121314151617181920212223242526272829303132public class DependencyPass &#123;    /**     *  通过接口实现依赖     */    interface ITV&#123;        public void play();    &#125;    interface IOpenAndClose&#123;        public void open(ITV itv);    &#125;    static class ChangHong implements ITV...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/26</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Spring源码阅读">Spring源码阅读</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/19/leetcode-36-有效的数独/" >
+            
+                <span>leetcode 36. 有效的数独</span>
+        </a>
+        <div class="abstract-content">
+            题目简介判断一个 9x9 的数独是否有效。只需要根据以下规则，验证已经填入的数字是否有效即可。
+数字 1-9 在每一行只能出现一次。数字 1-9 在每一列只能出现一次。数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
+
+上图是一个部分填充的有效的数独。
+数独部分空格内已填入了数字，空白格用 ‘.’ 表示。
+123456789101112131415161718192021222324252627282930313233import java.util.HashMap;class Solution &#123;    public boolean isValidSudoku...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/09/18/leetcode-34-在排序数组中查找元素的第一个和最后一个位置/" >
             
                 <span>leetcode 34. 在排序数组中查找元素的第一个和最后一个位置</span>
@@ -587,108 +679,10 @@
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/12/leetcode-17-电话号码的字母组合/" >
-            
-                <span>leetcode 17. 电话号码的字母组合</span>
-        </a>
-        <div class="abstract-content">
-            题目简介给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。
-给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
-示例:
-输入：”23”输出：[“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf”].
-12345678910111213141516171819202122232425262728293031323334353637import java.util.ArrayList;import java.util.HashMap;import java.util.List;import java.ut...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/12</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/12/leetcode-16-最接近的三数之和/" >
-            
-                <span>leetcode 16. 最接近的三数之和</span>
-        </a>
-        <div class="abstract-content">
-            题目简介给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
-例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.
-与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
-1234567891011121314151617181920212223242526272829303132import java.util.Arrays;class Solution &#123;    public int t...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/12</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/12/leetcode-15-三数之和/" >
-            
-                <span>leetcode 15. 三数之和</span>
-        </a>
-        <div class="abstract-content">
-            题目简介给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组。
-注意：答案中不可以包含重复的三元组。
-例如, 给定数组 nums = [-1, 0, 1, 2, -1, -4]，
-满足要求的三元组集合为：[  [-1, 0, 1],  [-1, -1, 2]]
-12345678910111213141516171819202122232425262728293031323334353637383940414243import java.util.ArrayList;import j...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/12</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/2019/">&#60; PREV</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2019/page/3/">3</a><a class="page-number" href="/archives/2019/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2019/page/11/">11</a><a class="extend next" rel="next" href="/archives/2019/page/3/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/2019/">&#60; PREV</a><a class="page-number" href="/archives/2019/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2019/page/3/">3</a><a class="page-number" href="/archives/2019/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/2019/page/12/">12</a><a class="extend next" rel="next" href="/archives/2019/page/3/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -2655,9 +2649,196 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 109
+        Total : 112
         </div>
         <!-- search  -->
         
@@ -2674,6 +2855,21 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2019/10/31/Tips5-基础/" >Tips5 基础</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/31</span><a class="archive-post-title" href= "/2019/10/31/Tips1-基础/" >Tips1 基础</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/16</span><a class="archive-post-title" href= "/2019/10/16/8-组合设计模式/" >8 组合设计模式</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -2697,12 +2893,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
         </li>
     
     
@@ -2782,12 +2978,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
         </li>
     
     
@@ -2822,27 +3018,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-26-删除排序数组中的重复项/" >leetcode 26. 删除排序数组中的重复项</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
@@ -2852,12 +3028,32 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-26-删除排序数组中的重复项/" >leetcode 26. 删除排序数组中的重复项</a>
         </li>
     
     
@@ -2882,12 +3078,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
@@ -2932,12 +3128,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
         </li>
     
     
@@ -2957,12 +3153,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-49-把字符串转换成整数/" >codingNow 49 把字符串转换成整数</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-50-数组中重复的数字/" >codingNow 50 数组中重复的数字</a>
         </li>
     
     
@@ -2977,12 +3173,17 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-46-圆圈中最后剩下的数/" >codingNow 46 圆圈中最后剩下的数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-45-扑克牌顺子/" >codingNow 45 扑克牌顺子</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -2992,17 +3193,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
@@ -3037,12 +3233,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
         </li>
     
     
@@ -3097,12 +3293,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -3152,12 +3348,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
@@ -3226,6 +3422,8 @@
     <div class="sidebar-tags-name">
     
         <span class="sidebar-tag-name" data-tags="设计模式学习笔记"><span class="iconfont-archer">&#xe606;</span>设计模式学习笔记</span>
+    
+        <span class="sidebar-tag-name" data-tags="Tips"><span class="iconfont-archer">&#xe606;</span>Tips</span>
     
         <span class="sidebar-tag-name" data-tags="coding-interviews"><span class="iconfont-archer">&#xe606;</span>coding-interviews</span>
     
