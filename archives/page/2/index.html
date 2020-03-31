@@ -361,17 +361,97 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/27/1-单例设计模式/" >
+        <a class="abstract-title" href = "/2019/10/31/Tips5-基础/" >
             
-                <span>1 单例设计模式</span>
+                <span>Tips5 基础</span>
         </a>
         <div class="abstract-content">
-            单例设计模式1.饿汉式（静态常量）12345678910111213141516public class SingletonTest &#123;    public static void main(String[] args) &#123;        Singleton instance = Singleton.getInstance();        Singleton instance1 = Singleton.getInstance();        System.out.println(instance==instance1);    &#125;    static...
+            41、a.hashCode() 有什么用？与 a.equals(b) 有什么关系？   hashCode() 方法对应对象整型的 hash 值。它常用于基于 hash 的集合类，如 Hashtable、HashMap、LinkedHashMap等等。它与 equals() 方法关系特别紧密。根据 Java 规范，两个使用 equal() 方法来判断相等的对象，必须具有相同的 hash code。
+42、字节流与字符流的区别、   实际上字节流在操作时本身不会用到缓冲区（内存），是文件本身直接操作的，而字符流在操作时使用了缓冲区，通过缓冲区再操作文件
+   要把一段二进制数据数据逐一输出到...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/27</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/31</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tips">Tips</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/31/Tips1-基础/" >
+            
+                <span>Tips1 基础</span>
+        </a>
+        <div class="abstract-content">
+            
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/31</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/16/8-组合设计模式/" >
+            
+                <span>8 组合设计模式</span>
+        </a>
+        <div class="abstract-content">
+            
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/16</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/14/7-装饰者设计模式/" >
+            
+                <span>7 装饰者设计模式</span>
+        </a>
+        <div class="abstract-content">
+            装饰者模式介绍装饰者模式就像打包一个快递主体比如：陶瓷、衣服 (Component) // 被装饰者包装 ：比如：报纸填充、塑料泡沫、纸板、木板 (2)Component主体：比如类似前面的 Drink
+3)ConcreteComponent 和 DecoratorConcreteComponent ：具体的主体比如前面的各个单品咖啡Decorator: 装饰者，比如各调料
+4)在如图的 Component 与 ConcreteComponent 之间 ，如果ConcreteComponent 类很多 还可以设计一个缓冲层，将共有的部分提取出来，抽象层一个类 。
+123456789101...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/14</span>
             </div>
             <!-- tags  -->
             
@@ -390,57 +470,26 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/26/依赖关系传递的三种方式/" >
+        <a class="abstract-title" href = "/2019/10/13/6-桥接设计模式/" >
             
-                <span>依赖关系传递的三种方式</span>
+                <span>6 桥接设计模式</span>
         </a>
         <div class="abstract-content">
-            1234567891011121314151617181920212223242526272829303132public class DependencyPass &#123;    /**     *  通过接口实现依赖     */    interface ITV&#123;        public void play();    &#125;    interface IOpenAndClose&#123;        public void open(ITV itv);    &#125;    static class ChangHong implements ITV...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/26</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Spring源码阅读">Spring源码阅读</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/19/leetcode-36-有效的数独/" >
-            
-                <span>leetcode 36. 有效的数独</span>
-        </a>
-        <div class="abstract-content">
-            题目简介判断一个 9x9 的数独是否有效。只需要根据以下规则，验证已经填入的数字是否有效即可。
-数字 1-9 在每一行只能出现一次。数字 1-9 在每一列只能出现一次。数字 1-9 在每一个以粗实线分隔的 3x3 宫内只能出现一次。
+            桥接模式 Bridge 基本介绍基本介绍1)桥接模式 (Bridge模式是指 ：将实现与抽象放在两个不同的类层次中，使两个层次可以独立改变。2)是一种结构型设计模式3)Bridge 模式基于类的最小设计原则 ，通过使用封装、聚合及继承等行为让不同的类承担不同的职责。它的主要特点是把抽象 (与行为实现分离开来，从而可以保持各部分的独立性以及应对他们的功能扩展
+12345678package bridge;//接口public interface Brand &#123;    void open();    void close();    void call();&#125;
 
-上图是一个部分填充的有效的数独。
-数独部分空格内已填入了数字，空白格用 ‘.’ 表示。
-123456789101112131415161718192021222324252627282930313233import java.util.HashMap;class Solution &#123;    public boolean isValidSudoku...
+1234...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/19</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/13</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
     
 </div>
             
@@ -453,29 +502,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/18/leetcode-34-在排序数组中查找元素的第一个和最后一个位置/" >
+        <a class="abstract-title" href = "/2019/10/11/5-适配器设计模式/" >
             
-                <span>leetcode 34. 在排序数组中查找元素的第一个和最后一个位置</span>
+                <span>5 适配器设计模式</span>
         </a>
         <div class="abstract-content">
-            题目描述给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。
-你的算法时间复杂度必须是 O(log n) 级别。
-如果数组中不存在目标值，返回 [-1, -1]。
-示例 1:
-输入: nums = [5,7,7,8,8,10], target = 8输出: [3,4]示例 2:
-输入: nums = [5,7,7,8,8,10], target = 6输出: [-1,-1]
-12345678910111213141516171819202122232425262728293031323334353637383940414243...
+            基本介绍1)适配器模式 (Adapter 将某个类的接口转换成客户端期望的另一个接口表示，主的目的是兼容性，让原本因接口不匹配不能一起工作的两个类可以协同工作。其别名为包装器2)适配器 模式属于结构型模式3)主要分为三类：类适配器模式、对象适配器模式、接口适配器模式
+类适配器12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849/** * 被适配的类 */public class Voltage220V &#123;    public int output220V...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/18</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/11</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
     
 </div>
             
@@ -488,31 +532,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/17/leetcode-33-搜索旋转排序数组/" >
+        <a class="abstract-title" href = "/2019/10/10/4-建造者设计模式/" >
             
-                <span>leetcode 33. 搜索旋转排序数组</span>
+                <span>4 建造者设计模式</span>
         </a>
         <div class="abstract-content">
-            题目描述假设按照升序排序的数组在预先未知的某个点上进行了旋转。
-( 例如，数组 [0,1,2,4,5,6,7] 可能变为 [4,5,6,7,0,1,2] )。
-搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。
-你可以假设数组中不存在重复的元素。
-你的算法时间复杂度必须是 O(log n) 级别。
-示例 1:
-输入: nums = [4,5,6,7,0,1,2], target = 0输出: 4示例 2:
-输入: nums = [4,5,6,7,0,1,2], target = 3输出: -1
-1234567891011121314151617181920...
+            基本介绍1.适用场景：1)隔离复杂对象的创建和使用，相同的方法，不同执行顺序，产生不同事件结果2)多个部件都可以装配到一个对象中，但产生的运行结果不相同3)产品类非常复杂或者产品类因为调用顺序不同而产生不同作用4)初始化一个对象时，参数过多，或者很多参数具有默认值5)Builder模式不适合创建差异性很大的产品类6)产品内部变化复杂，会导致需要定义很多具体建造者类实现变化，增加项目中类的数量，增加系统的理解难度和运行成本7)需要生成的产品对象有复杂的内部结构，这些产品对象具备共性；
+2.建造者模式的四个角色1)Product （产品角色一个具体的产品对象 。2)Builder （抽象建造...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/17</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/10</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
     
 </div>
             
@@ -525,29 +562,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/17/leetcode-29-两数相除/" >
+        <a class="abstract-title" href = "/2019/10/09/3-原型设计模式/" >
             
-                <span>leetcode 29. 两数相除</span>
+                <span>3 原型模式</span>
         </a>
         <div class="abstract-content">
-            题目描述给定两个整数，被除数 dividend 和除数 divisor。将两数相除，要求不使用乘法、除法和 mod 运算符。
-返回被除数 dividend 除以除数 divisor 得到的商。
-示例 1:
-输入: dividend = 10, divisor = 3输出: 3示例 2:
-输入: dividend = 7, divisor = -3输出: -2说明:
-被除数和除数均为 32 位有符号整数。除数不为 0。假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。本题中，如果除法结果溢出，则返回 231 − 1。
-123456789101112...
+            基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
+12345678910111213141516public class Sheep implements Clo...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/17</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/09</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "coding-interviews">coding-interviews</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
     
 </div>
             
@@ -560,27 +592,24 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/17/leetcode-24-两两交换链表中的节点/" >
+        <a class="abstract-title" href = "/2019/10/09/3-原型模式/" >
             
-                <span>leetcode 24. 两两交换链表中的节点</span>
+                <span>3 原型设计模式</span>
         </a>
         <div class="abstract-content">
-            题目简介给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。
-你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
-示例:
-给定 1-&gt;2-&gt;3-&gt;4, 你应该返回 2-&gt;1-&gt;4-&gt;3.
-12345678910111213141516171819class Solution &#123;    public ListNode swapPairs(ListNode head) &#123;        if (head == null || head.next == null) &#123;            return hea...
+            基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
+12345678910111213141516public class Sheep implements Clo...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/17</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/09</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
     
 </div>
             
@@ -593,86 +622,23 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/16/leetcode-22-括号生成/" >
+        <a class="abstract-title" href = "/2019/09/27/2-工厂设计模式/" >
             
-                <span>leetcode 22. 括号生成</span>
+                <span>2 工厂设计模式</span>
         </a>
         <div class="abstract-content">
-            题目简介给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。
-例如，给出 n = 3，生成结果为：
-[  “((()))”,  “(()())”,  “(())()”,  “()(())”,  “()()()”]
-12345678910111213141516171819202122import java.util.ArrayList;import java.util.List;class Solution &#123;    ArrayList&lt;String&gt; list = new ArrayList&lt;String&gt;(); ...
+            准备工作123456789101112//披萨类public class Pizza &#123;    public void prepare1()&#123;        System.out.println(&quot;准备工作1&quot;);    &#125;    public void prepare2()&#123;        System.out.println(&quot;准备工作2&quot;);    &#125;    public void prepare3()&#123;        System.out.println(&quot;准备工作3&q...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/16</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/27</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/16/leetcode-19-删除链表的倒数第N个节点/" >
-            
-                <span>leetcode 19. 删除链表的倒数第N个节点</span>
-        </a>
-        <div class="abstract-content">
-            题目简介给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.
-当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.
-123456789101112131415161718class Solution &#123;    public ListNode removeNthFromEnd(ListNode head, int n) &#123;        ListNode pre = new ListNode(0);        pre.next = head;        ListNode left = pre;      ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/16/leetcode-18-四数之和/" >
-            
-                <span>leetcode 18. 四数之和</span>
-        </a>
-        <div class="abstract-content">
-            题目简介123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566import java.util.ArrayList;import java.util.Arrays;import java.util.List;class Solution &#123;    //基本思想：k个数的和,先固定k-2个数的位置，通过分层for循环    //最后通过k=2的时候选出符合条件的进行返回    public ...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
     
 </div>
             
@@ -682,7 +648,7 @@
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <a class="extend prev" rel="prev" href="/archives/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="page-number" href="/archives/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/12/">12</a><a class="extend next" rel="next" href="/archives/page/3/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/archives/">&#60; PREV</a><a class="page-number" href="/archives/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/page/3/">3</a><a class="page-number" href="/archives/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/13/">13</a><a class="extend next" rel="next" href="/archives/page/3/">NEXT &#62;</a>
     </nav>
     
 </main>
@@ -2830,9 +2796,102 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 112
+        Total : 121
         </div>
         <!-- search  -->
         
@@ -2849,6 +2908,56 @@
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/28</span><a class="archive-post-title" href= "/2019/11/28/Tips14-JavaWeb/" >Tips14 JavaWeb</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/25</span><a class="archive-post-title" href= "/2019/11/25/Tips13-泛型/" >Tips13 泛型</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips12-Java多线程/" >Tips12 Java多线程</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips11-数据库/" >Tips11 数据库</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/08</span><a class="archive-post-title" href= "/2019/11/08/Tips10-Java持久层/" >Tips10 Java持久层</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/08</span><a class="archive-post-title" href= "/2019/11/08/青山见我应如是/" >青山见我应如是</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/06</span><a class="archive-post-title" href= "/2019/11/06/Tips9-框架/" >Tips9 框架</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/06</span><a class="archive-post-title" href= "/2019/11/06/Tips8-JavaWeb/" >Tips8 JavaWeb</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/05</span><a class="archive-post-title" href= "/2019/11/05/Tips7-JavaWeb/" >Tips7 JavaWeb</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/01</span><a class="archive-post-title" href= "/2019/11/01/Tips6-JavaWeb/" >Tips6 JavaWeb</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -2972,12 +3081,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
         </li>
     
     
@@ -3007,12 +3116,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
         </li>
     
     
@@ -3022,12 +3126,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
         </li>
     
     
@@ -3037,12 +3136,17 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-27-移除元素/" >leetcode 27. 移除元素</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-13-罗马数字转整数/" >leetcode 13. 罗马数字转整数</a>
         </li>
     
     
@@ -3052,7 +3156,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
@@ -3062,22 +3166,22 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-9-回文数/" >leetcode 9. 回文数</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/08</span><a class="archive-post-title" href= "/2019/09/08/leetcode-1-两数之和/" >leetcode 1. 两数之和</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-66-减绳子/" >codingNow 66 减绳子</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
         <li class="archive-post-item">
             <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
@@ -3122,12 +3226,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-55-链表中环的入口结点/" >codingNow 55 链表中环的入口结点</a>
+            <span class="archive-post-date">09/04</span><a class="archive-post-title" href= "/2019/09/04/codingNow-54-字符流中第一个不重复的字符/" >codingNow 54 字符流中第一个不重复的字符</a>
         </li>
     
     
@@ -3177,7 +3281,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
         </li>
     
     
@@ -3187,12 +3296,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-42-和为s的两个数字/" >codingNow 42 和为s的两个数字</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
@@ -3227,12 +3331,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-33-寻找第n个丑数/" >codingNow 33 寻找第n个丑数</a>
+            <span class="archive-post-date">08/28</span><a class="archive-post-title" href= "/2019/08/28/codingNow-34-第一个只出现一次的字符/" >codingNow 34 第一个只出现一次的字符</a>
         </li>
     
     
@@ -3377,12 +3481,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/codingNow-4-还原二叉树/" >codingNow 4 还原二叉树</a>
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/关于二叉树/" >关于二叉树</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/关于二叉树/" >关于二叉树</a>
+            <span class="archive-post-date">08/23</span><a class="archive-post-title" href= "/2019/08/23/codingNow-4-还原二叉树/" >codingNow 4 还原二叉树</a>
         </li>
     
     
@@ -3417,13 +3521,15 @@
     
         <span class="sidebar-tag-name" data-tags="设计模式学习笔记"><span class="iconfont-archer">&#xe606;</span>设计模式学习笔记</span>
     
-        <span class="sidebar-tag-name" data-tags="coding-interviews"><span class="iconfont-archer">&#xe606;</span>coding-interviews</span>
-    
         <span class="sidebar-tag-name" data-tags="Tips"><span class="iconfont-archer">&#xe606;</span>Tips</span>
+    
+        <span class="sidebar-tag-name" data-tags="coding-interviews"><span class="iconfont-archer">&#xe606;</span>coding-interviews</span>
     
         <span class="sidebar-tag-name" data-tags="leetcode"><span class="iconfont-archer">&#xe606;</span>leetcode</span>
     
         <span class="sidebar-tag-name" data-tags="Spring源码阅读"><span class="iconfont-archer">&#xe606;</span>Spring源码阅读</span>
+    
+        <span class="sidebar-tag-name" data-tags="ty"><span class="iconfont-archer">&#xe606;</span>ty</span>
     
         <span class="sidebar-tag-name" data-tags="浅析java"><span class="iconfont-archer">&#xe606;</span>浅析java</span>
     
