@@ -374,6 +374,66 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/16/leetcode-19-删除链表的倒数第N个节点/" >
+            
+                <span>leetcode 19. 删除链表的倒数第N个节点</span>
+        </a>
+        <div class="abstract-content">
+            题目简介给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.
+当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.
+123456789101112131415161718class Solution &#123;    public ListNode removeNthFromEnd(ListNode head, int n) &#123;        ListNode pre = new ListNode(0);        pre.next = head;        ListNode left = pre;      ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/16</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/09/16/leetcode-18-四数之和/" >
+            
+                <span>leetcode 18. 四数之和</span>
+        </a>
+        <div class="abstract-content">
+            题目简介123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566import java.util.ArrayList;import java.util.Arrays;import java.util.List;class Solution &#123;    //基本思想：k个数的和,先固定k-2个数的位置，通过分层for循环    //最后通过k=2的时候选出符合条件的进行返回    public ...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/16</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/09/12/leetcode-17-电话号码的字母组合/" >
             
                 <span>leetcode 17. 电话号码的字母组合</span>
@@ -613,74 +673,6 @@ string convert(string s, int numRows);示例 1:
 输入: “babad”输出: “bab”注意: “aba” 也是一个有效答案。示例 2：
 输入: “cbbd”输出: “bb”
 寻找回文1234567891011121314151617181920212223242526272829303132333435class Solution &#123;    public String longestPalindrome(String s) &#123;        if (s.equals(&quot;&quot;))&#123...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/10</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/10/leetcode-3-无重复字符的最长子串/" >
-            
-                <span>leetcode 3. 无重复字符的最长子串</span>
-        </a>
-        <div class="abstract-content">
-            题目简介给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
-示例 1:
-输入: “abcabcbb”输出: 3解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。示例 2:
-输入: “bbbbb”输出: 1解释: 因为无重复字符的最长子串是 “b”，所以其长度为 1。示例 3:
-输入: “pwwkew”输出: 3解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。     请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。
-12345678910111213141516171819import java.util.Has...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/10</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "leetcode">leetcode</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/10/leetcode-2-两数相加/" >
-            
-                <span>leetcode 2. 两数相加</span>
-        </a>
-        <div class="abstract-content">
-            题目简介给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。
-如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
-您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
-示例：
-输入：(2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)输出：7 -&gt; 0 -&gt; 8原因：342 + 465 = 807
-12345678910111213141516171819202122232425262728class Solution &#123;    pu...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -3047,9 +3039,35 @@ string convert(string s, int numRows);示例 1:
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 121
+        Total : 123
         </div>
         <!-- search  -->
         
@@ -3063,6 +3081,25 @@ string convert(string s, int numRows);示例 1:
     
     
     
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/25</span><a class="archive-post-title" href= "/2020/07/25/算法框架集合/" >算法框架集合</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/11</span><a class="archive-post-title" href= "/2020/06/11/背包问题/" >背包问题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
@@ -3079,12 +3116,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips12-Java多线程/" >Tips12 Java多线程</a>
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips11-数据库/" >Tips11 数据库</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips11-数据库/" >Tips11 数据库</a>
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips12-Java多线程/" >Tips12 Java多线程</a>
         </li>
     
     
@@ -3154,12 +3191,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
         </li>
     
     
@@ -3239,12 +3276,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
         </li>
     
     
@@ -3274,12 +3311,7 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
@@ -3289,17 +3321,7 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
         </li>
     
     
@@ -3309,12 +3331,27 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-26-删除排序数组中的重复项/" >leetcode 26. 删除排序数组中的重复项</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
         </li>
     
     
@@ -3334,12 +3371,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
@@ -3439,7 +3476,7 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
         </li>
     
     
@@ -3449,12 +3486,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
         </li>
     
     
@@ -3549,12 +3586,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -3604,12 +3641,12 @@ string convert(string s, int numRows);示例 1:
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     

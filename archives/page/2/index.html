@@ -361,6 +361,67 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/05/Tips7-JavaWeb/" >
+            
+                <span>Tips7 JavaWeb</span>
+        </a>
+        <div class="abstract-content">
+            61，JDBC访问数据库的基本步骤是什么？1，加载驱动2，通过DriverManager对象获取连接对象Connection3，通过连接对象获取会话4，通过会话进行数据的增删改查，封装对象5，关闭资源
+62，说说preparedStatement和Statement的区别1，效率：使用PreparedStatement执行SQL命令时,命令会被数据库编译和解析,并放到命令缓冲区.以后每当执行同一个PreparedStatement对象时,预编译的命令就可以重复使用2，安全性：可以有效的避免sql注入攻击！sql注入攻击就是从客户端输入一些非法的特殊字符，而使服务器端在构造sql语句的时候...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/05</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tips">Tips</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/01/Tips6-JavaWeb/" >
+            
+                <span>Tips6 JavaWeb</span>
+        </a>
+        <div class="abstract-content">
+            51、说一说Servlet的生命周期?   Servlet有良好的生存期的定义，包括加载和实例化、初始化、处理请求以及服务结束。这个生存期由javax.servlet.Servlet接口的init(),service()和destroy方法表达。
+   Servlet被服务器实例化后，容器运行其init方法，请求到达时运行其service方法，service方法自动派遣运行与请求对应的doXXX方法（doGet，doPost）等，当服务器决定将实例销毁的时候调用其destroy方法。
+web容器加载servlet，生命周期开始。通过调用servlet的init()方法进行servlet的...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/01</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Tips">Tips</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/10/31/Tips5-基础/" >
             
                 <span>Tips5 基础</span>
@@ -574,65 +635,6 @@
             <!-- date  -->
             <div class="abstract-date">
                 <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/09/3-原型模式/" >
-            
-                <span>3 原型设计模式</span>
-        </a>
-        <div class="abstract-content">
-            基本介绍1)原型模式 Prototype 模式是指：用原 型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象2)原型模式是一种创建型设计模式，允许一个对象再创建另外一个可定制的对象无需知道如何创建的细节3)工作原理是 通过将一个原型对象传给那个要发动创建的对象，这个要发动创建的对象通过请求原型对象拷贝它们自己来实施创建，即对象.clone。4)二者只是属性相同，并不是同一个5)对象.clone是浅拷贝6)深克隆两种方法：1.重写clone方法。2.通过对象的序列化实现
-12345678910111213141516public class Sheep implements Clo...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/09</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "设计模式学习笔记">设计模式学习笔记</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/09/27/2-工厂设计模式/" >
-            
-                <span>2 工厂设计模式</span>
-        </a>
-        <div class="abstract-content">
-            准备工作123456789101112//披萨类public class Pizza &#123;    public void prepare1()&#123;        System.out.println(&quot;准备工作1&quot;);    &#125;    public void prepare2()&#123;        System.out.println(&quot;准备工作2&quot;);    &#125;    public void prepare3()&#123;        System.out.println(&quot;准备工作3&q...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/09/27</span>
             </div>
             <!-- tags  -->
             
@@ -2889,9 +2891,35 @@
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 121
+        Total : 123
         </div>
         <!-- search  -->
         
@@ -2905,6 +2933,25 @@
     
     
     
+    
+    <div class="archive-year"> 2020 </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">07/25</span><a class="archive-post-title" href= "/2020/07/25/算法框架集合/" >算法框架集合</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/11</span><a class="archive-post-title" href= "/2020/06/11/背包问题/" >背包问题</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
@@ -2921,12 +2968,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips12-Java多线程/" >Tips12 Java多线程</a>
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips11-数据库/" >Tips11 数据库</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips11-数据库/" >Tips11 数据库</a>
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/Tips12-Java多线程/" >Tips12 Java多线程</a>
         </li>
     
     
@@ -2996,12 +3043,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型模式/" >3 原型设计模式</a>
+            <span class="archive-post-date">10/09</span><a class="archive-post-title" href= "/2019/10/09/3-原型设计模式/" >3 原型模式</a>
         </li>
     
     
@@ -3081,12 +3128,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-8-字符串转换整数/" >leetcode 8. 字符串转换整数</a>
+            <span class="archive-post-date">09/11</span><a class="archive-post-title" href= "/2019/09/11/leetcode-11-盛最多水的容器/" >leetcode 11. 盛最多水的容器</a>
         </li>
     
     
@@ -3116,12 +3163,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
         </li>
     
     
@@ -3131,17 +3173,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-28-实现-strStr/" >leetcode 28. 实现 strStr()</a>
         </li>
     
     
@@ -3151,12 +3183,27 @@
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-14-最长公共前缀/" >leetcode 14. 最长公共前缀</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-26-删除排序数组中的重复项/" >leetcode 26. 删除排序数组中的重复项</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-21-合并两个有序链表/" >leetcode 21. 合并两个有序链表</a>
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-35-搜索插入位置/" >leetcode 35. 搜索插入位置</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-20-有效的括号/" >leetcode 20. 有效的括号</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/09</span><a class="archive-post-title" href= "/2019/09/09/leetcode-31-下一个排列/" >leetcode 31. 下一个排列</a>
         </li>
     
     
@@ -3176,12 +3223,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-65-机器人的运动范围/" >codingNow 65 机器人的运动范围</a>
+            <span class="archive-post-date">09/06</span><a class="archive-post-title" href= "/2019/09/06/codingNow-64-矩阵中的路径/" >codingNow 64 矩阵中的路径</a>
         </li>
     
     
@@ -3281,7 +3328,7 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
         </li>
     
     
@@ -3291,12 +3338,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-41-和为s的连续数列/" >codingNow 41 和为s的连续数列</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-43-左旋转字符串/" >codingNow 43 左旋转字符串</a>
+            <span class="archive-post-date">09/03</span><a class="archive-post-title" href= "/2019/09/03/codingNow-44-反转单词顺序/" >codingNow 44 反转单词顺序</a>
         </li>
     
     
@@ -3391,12 +3438,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-21-栈的压入，弹出序列/" >codingNow 21 栈的压入，弹出序列</a>
+            <span class="archive-post-date">08/26</span><a class="archive-post-title" href= "/2019/08/26/codingNow-22-由上往下打印二叉树/" >codingNow 22 由上往下打印二叉树</a>
         </li>
     
     
@@ -3446,12 +3493,12 @@
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-11-一个数的二进制中1的个数/" >codingNow 11 一个数的二进制中1的个数</a>
+            <span class="archive-post-date">08/24</span><a class="archive-post-title" href= "/2019/08/24/codingNow-10-矩形覆盖/" >codingNow 10 矩形覆盖</a>
         </li>
     
     
